@@ -6405,3 +6405,341 @@ Stack trace:
 REQUEST_URI=/7.jpg
 HTTP_REFERER=http://yii.ww/
 ---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "4.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('4.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('4.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/4.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/4.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "3.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('3.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('3.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/3.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/3.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "2.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('2.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('2.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/2.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/2.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "5.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('5.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('5.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/5.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/5.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "1.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('1.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('1.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/1.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "6.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('6.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('6.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/6.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/6.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:38:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "7.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('7.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('7.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/7.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/7.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "1.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('1.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('1.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/1.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "2.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('2.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('2.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/2.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/2.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "4.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('4.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('4.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/4.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/4.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "6.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('6.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('6.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/6.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/6.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "5.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('5.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('5.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/5.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/5.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "3.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('3.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('3.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/3.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/3.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "7.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('7.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('7.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/7.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/7.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "1.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('1.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('1.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/1.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/1.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "2.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('2.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('2.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/2.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/2.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "6.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('6.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('6.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/6.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/6.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "4.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('4.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('4.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/4.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/4.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "5.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('5.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('5.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/5.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/5.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "3.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('3.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('3.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/3.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/3.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 15:39:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "7.jpg".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('7.jpg')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('7.jpg')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site/7.jpg')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/7.jpg
+HTTP_REFERER=http://yii.ww/site/index
+---
+2014/03/02 21:26:27 [error] [php] Argument 1 passed to EShoppingCart::put() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\views\site\index.php on line 23 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:50)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#2 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#3 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#4 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#7 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (50)
+in X:\home\yii.ww\www\protected\views\site\index.php (23)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+2014/03/02 21:26:56 [error] [php] Object of class Product could not be converted to string (X:\home\yii.ww\www\protected\views\site\index.php:24)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#1 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#3 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#6 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in X:\home\yii.ww\www\protected\views\site\index.php (24)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/02 21:27:39 [error] [php] Object of class Product could not be converted to string (X:\home\yii.ww\www\protected\views\site\index.php:14)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#1 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#3 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#6 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in X:\home\yii.ww\www\protected\views\site\index.php (14)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/02 21:27:43 [error] [php] Object of class Product could not be converted to string (X:\home\yii.ww\www\protected\views\site\index.php:14)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#1 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#2 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#3 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#4 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#6 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+in X:\home\yii.ww\www\protected\views\site\index.php (14)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/02 21:35:13 [error] [php] Argument 1 passed to EShoppingCart::put() must implement interface IECartPosition, integer given, called in X:\home\yii.ww\www\protected\views\site\index.php on line 13 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:50)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#1 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#2 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#3 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#4 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#5 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#7 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#11 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/index
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (50)
+in X:\home\yii.ww\www\protected\views\site\index.php (13)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+2014/03/02 22:15:05 [error] [php] include(CartController.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\views\site\index.php(38): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#2 X:\home\yii.ww\www\framework\web\CBaseController.php(95): SiteController->renderInternal()
+#3 X:\home\yii.ww\www\framework\web\CController.php(869): SiteController->renderFile()
+#4 X:\home\yii.ww\www\framework\web\CController.php(782): SiteController->renderPartial()
+#5 X:\home\yii.ww\www\protected\controllers\SiteController.php(47): SiteController->render()
+#6 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#7 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 X:\home\yii.ww\www\framework\web\CController.php(286): SiteController->runAction()
+#9 X:\home\yii.ww\www\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): SiteController->run()
+#11 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#13 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/index
+in X:\home\yii.ww\www\protected\views\site\index.php (38)
+in X:\home\yii.ww\www\protected\controllers\SiteController.php (47)
+in X:\home\yii.ww\www\index.php (13)

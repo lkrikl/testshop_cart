@@ -20,13 +20,15 @@ $('.add-tovar').click(function() {
     var allprice = $('#block-cart span#price').data("price");
     var price = $(this).data('price');
     var tovarid = $(this).data("id");
-    
+
     newprice = Number(allprice) + Number(price);
     newcount ++;
     
     if (typeof products[tovarid]  === "undefined") {
         products[tovarid] = { "price":  price, "count": newcount };
-    } 
+    } else {
+        products[tovarid].count++;
+    }
     
     
     $('#block-cart span#price').html(newprice+' $').attr("price",newprice);
@@ -44,7 +46,7 @@ $.ajax( {
     type: "POST",
     url: "/cart",
     dataType: "html",
-    data: {"newprice":newprice, "count": newcount, "products" : products}, 
+    data: {"newprice": newprice, "count": newcount, "products" : products, "tovarid" : tovarid},
     success: function(data) {
         $(".messagecart").html("Все круто!sdfsf wefr ew fef wf wf w");
         setTimeout('$(".messagecart").hide();',1600);

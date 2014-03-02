@@ -19,6 +19,7 @@ return array(
                 'application.modules.user.models.*',
                 'application.modules.user.components.*',
                 'application.extensions.shoppingCart.*'
+                
 	),
 //	'theme'=>'bootstrap', // requires you to copy the theme under your themes directory
     'modules'=>array(

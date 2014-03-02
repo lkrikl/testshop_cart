@@ -12,7 +12,7 @@
  * @property integer $category_id
  * @property string $description
  */
-class Product extends CActiveRecord
+class Product extends CActiveRecord implements IECartPosition
 {
 	/**
 	 * @return string the associated database table name
@@ -121,4 +121,16 @@ class Product extends CActiveRecord
             
             return parent::beforeSave();
         }
+
+    public function getId() {
+        return 'Product'.$this->id;
+    }
+
+    public function getPrice() {
+        return $this->price;
+    }
+    public function tovarName() {
+        $product = Product::model()->findByPk($_POST['tovarid']);
+    }
+
 }

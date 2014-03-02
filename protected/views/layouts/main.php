@@ -23,7 +23,7 @@
 </head>
 
 <body>
-    <pre><?php  print_r( Yii::app()->session->get("products")); ?></pre>
+    <pre><?php // print_r( Yii::app()->session->get("products")); ?></pre>
 
 <div class="container" id="page">
 
@@ -43,18 +43,20 @@
                     <a href="">Зарегистрироваться </a>
                 </class>  
             
-             <div id="block-cart">
-                <p>Корзина (<span class="count"> <?php echo Yii::app()->session->get("count");?></span>) 
-                    <div>
-                        <p>Товаров: <span class="count"> <?php echo Yii::app()->session->get("count");?></span></p>
-                        <p>На сумму: <span data-price="0" id="price">
-                            <?php echo Yii::app()->session->get("cart");?>
-                            </span>
-                        </p>
-                        <a href="">Оформить</a>
+                             <div id="block-cart">
+                                <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
+                                    
+                                    <div>
+                                        
+                                        <p>Товаров: <span class="count"> <?php echo Yii::app()->shoppingCart->getItemsCount();?></span></p>
+                                        <p>На сумму: <span data-price="0" id="price">
+                                            <?php echo Yii::app()->shoppingCart->getCost();?>
+                                            </span>
+                                        </p>
+                                        <a href="">Оформить</a>
 
-                    </div>
-             </div>
+                                    </div>
+                             </div>
         </div>
         <!-- mainmenu -->
 	<div id="mainmenu">
