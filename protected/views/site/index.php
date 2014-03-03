@@ -16,14 +16,10 @@ if ($position) {
     echo 'В корзине есть товар в количестве<br>';
 }
 // Количество позиций в корзине
-echo Yii::app()->shoppingCart->getCount() . '<br>';
+//echo Yii::app()->shoppingCart->getCount() . '<br>';
 
-// Количество всех товаров
-echo Yii::app()->shoppingCart->getItemsCount() . '<br>';
-//   echo $q.'<br>';
-// Сумма всех товаров
-echo Yii::app()->shoppingCart->getCost(); //400
 echo '<br>';
+
 
 
 foreach (Yii::app()->shoppingCart as $one) {
@@ -35,11 +31,13 @@ foreach (Yii::app()->shoppingCart as $one) {
 
 
 }
+echo '<br>';
 
-
+// Количество всех товаров
+echo 'Всего товаров в корзине - '.Yii::app()->shoppingCart->getItemsCount() . '<br>';
+//   echo $q.'<br>';
+// Сумма всех товаров
+echo 'Общая сумма - '.Yii::app()->shoppingCart->getCost(); //400
+echo '<br>';
 
 ?>
-
-<script type="text/javascript">
-    var cart_products_count = <?php echo Yii::app()->shoppingCart->getItemsCount(); ?>
-</script>

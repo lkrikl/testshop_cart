@@ -12,7 +12,7 @@ $this->breadcrumbs=array(
         <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b>
         <br />
         <?php echo $one->price; ?><br />
-        <p onclick="addToCart(<?php echo $one->id; ?>, this)" data-price="<?php echo $one->price; ?>" rel="1" class="add-tovar" data-id="<?php echo $one->id; ?>"></p> 
+        <p class="add-tovar" data-id="<?php echo $one->id; ?>"></p>
     </div>
     <?php endforeach; ?>
     <?php if (!$models)    echo 'В данной категории товаров нет.'; ?>
