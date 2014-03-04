@@ -13,9 +13,11 @@ class OrderController extends Controller
                 }
                 
                 
-                    if($orderform->save()){
-                        Yii::app()->user->setFlash('order','Ваши данные для оформления отправлены');
-                    }
+//                    if($orderform->save()){
+//                        Yii::app()->user->setFlash('order','Ваши данные для оформления отправлены');
+//                        
+//                    } 
+                    
                     
                      
 		$this->render('index',array('orderform' => $orderform));
