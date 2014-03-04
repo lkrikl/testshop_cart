@@ -12,6 +12,7 @@
 	<![endif]-->
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/js/clear.js"></script>
       
         
 	<?php //echo Yii::app()->bootstrap->register(); ?> 
@@ -46,13 +47,13 @@
                              <div id="block-cart">
                                 <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
                                     
-                                    <div>
+                                    <div id="update_scart">
                                         
                                         <p>Товаров: <span class="count"> <?php echo Yii::app()->shoppingCart->getItemsCount();?></span></p>
                                         <p>На сумму: <span data-price="0" id="price">
                                             <?php echo Yii::app()->shoppingCart->getCost();?>
                                             </span>
-                                        </p>
+                                        </p><a href="#" class="clear_cart"/>Очистить</a>
                                         <a href="http://yii.ww/order">Оформить</a>
 
                                     </div>
@@ -85,5 +86,6 @@
     <script type="text/javascript">
         var cart_products_count = <?php echo Yii::app()->shoppingCart->getItemsCount(); ?>
     </script>
+    
 </body>
 </html>
