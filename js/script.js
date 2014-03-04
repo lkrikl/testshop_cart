@@ -9,7 +9,7 @@ $(document).ready(function () {
 
     );
 
-    $('.add-tovar').click(function () {
+    $('.add-product').click(function () {
         var product_id = $(this).data("id");
         cart_products_count++;
 
@@ -27,7 +27,7 @@ $(document).ready(function () {
             dataType: "html",
             data: {"tovarid": product_id},
             success: function (data) {
-                $(".messagecart").html("Все круто!sdfsf wefr ew fef wf wf w");
+                $(".messagecart").html("Добавлено в корзину!");
                 setTimeout('$(".messagecart").hide();', 1600);
             }
 
