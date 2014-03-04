@@ -88,18 +88,11 @@ body
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
     margin: 0;
-    width: 75px;
+    width: 48px;
     height: 25px;
     cursor: pointer;
 }
-.clear_scart{
-    background: url(/images/button_buy_now.gif) no-repeat;
-    display: inline-block;
-    margin: 0;
-    width: 55px;
-    height: 10px;
-    cursor: pointer;
-}
+
 #sidebar
 {
 	padding: 20px 20px 20px 0;

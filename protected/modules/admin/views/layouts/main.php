@@ -5,19 +5,18 @@
 	<meta charset="utf-8" >
 
         <!-- blueprint CSS framework -->
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/ie.css" media="screen, projection" />
 	<![endif]-->
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
-        <script src="<?php echo Yii::app()->baseUrl; ?>/js/clear.js"></script>
-      
+        <link rel="stylesheet" type="text/css" href="/protected/modules/admin/css/main.css">
         
 	<?php //echo Yii::app()->bootstrap->register(); ?> 
 
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
@@ -33,28 +32,20 @@
 	</div><!-- header -->
         <div id="nadfooter">
             <!--img src="/images/logo_axioma.png"-->
-                <class id="headinfo">
-                    <a href="">Оплата и доставка </a>
-                    <a href="">Сотрудничество </a>
-                    <a href="">О компании </a>
-                    <a href="">Связаться с нами </a>
-                </class>   
-                <class id="logreg">
-                    <a href="">Войти </a> или
-                    <a href="">Зарегистрироваться </a>
-                </class>  
+               
+               
             
                              <div id="block-cart">
                                 <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
                                     
-                                    <div id="update_scart">
+                                    <div>
                                         
                                         <p>Товаров: <span class="count"> <?php echo Yii::app()->shoppingCart->getItemsCount();?></span></p>
                                         <p>На сумму: <span data-price="0" id="price">
                                             <?php echo Yii::app()->shoppingCart->getCost();?>
                                             </span>
-                                        </p><a href="#" class="clear_cart"/>Очистить</a>
-                                        <a href="http://yii.ww/order">Оформить</a>
+                                        </p>
+                                        <a href="">Оформить</a>
 
                                     </div>
                              </div>
@@ -62,7 +53,15 @@
         <!-- mainmenu -->
 	<div id="mainmenu">
 		<?php $this->widget('zii.widgets.CMenu',array(
-			 'items'=>  Category::menu('top'),
+			 'items'=>array(
+				array('label'=>'Главная', 'url'=>array('/site/index')),
+				array('label'=>'Заказы', 'url'=>array('/admin/order', 'view'=>'about')),
+                                array('label'=>'Категории', 'url'=>array('/admin/category', 'view'=>'about')),
+                                array('label'=>'Товары', 'url'=>array('/admin/product', 'view'=>'about')),
+                                array('label'=>'Contact', 'url'=>array('/site/contact')),
+				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+			),
 		)); ?>
              
         </div>
@@ -76,7 +75,7 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-        <div id="nadfooter">EMAIL ТЕЛЕФОН АДРЕС</div>
+        <div id="nadfooter"></div>
 	<div id="footer">
 		
 		<?php echo Yii::powered(); ?>&copy; <?php echo date('Y'); ?>
@@ -86,6 +85,5 @@
     <script type="text/javascript">
         var cart_products_count = <?php echo Yii::app()->shoppingCart->getItemsCount(); ?>
     </script>
-    
 </body>
 </html>

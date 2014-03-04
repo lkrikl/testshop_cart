@@ -23,5 +23,9 @@ class CartController extends Controller
         }
     }
 
-
+    public function actionClear() {
+        Yii::app()->shoppingCart->clear();
+        
+        $this->render('Clear');
+    }
 }
