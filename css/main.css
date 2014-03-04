@@ -84,15 +84,22 @@ body
     border-style: solid; 
     text-align: center;
 }
-.product_block p.add-tovar{
+.product_block p.add-product {
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
     margin: 0;
-    width: 48px;
+    width: 75px;
     height: 25px;
     cursor: pointer;
 }
-
+.clear_scart{
+    background: url(/images/button_buy_now.gif) no-repeat;
+    display: inline-block;
+    margin: 0;
+    width: 55px;
+    height: 10px;
+    cursor: pointer;
+}
 #sidebar
 {
 	padding: 20px 20px 20px 0;
@@ -390,7 +397,7 @@ div.search-form
     height: 250px;
     
 }
-#listing p.add-tovar{
+#listing p.add-product {
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
     margin: 0;
@@ -398,10 +405,10 @@ div.search-form
     height: 25px;
     cursor: pointer;
 }
-#listing p.add-tovar:hover{
+#listing p.add-product:hover{
     background: url(button_buy_now.gif) no-repeat;
 }
-#listing p.add-tovar:active{
+#listing p.add-product:active{
     background: url(button_buy_now.gif) no-repeat;
 }
 #listing p.price-tovar{
