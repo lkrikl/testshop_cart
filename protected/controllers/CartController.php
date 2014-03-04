@@ -4,11 +4,23 @@ class CartController extends Controller
 {
     public function actionIndex()
     {
-        $product = Product::model()->findByPk($_POST['tovarid']);
-        Yii::app()->shoppingCart [] = $product;
-        $count = Yii::app()->shoppingCart->getItemsCount();
-        header('Content-type: application/json');
-        echo CJavaScript::jsonEncode(array('count' => $count, 'status' => TRUE));
+        if (isset($_POST['product_id'])) {
+            $product = Product::model()->findByPk($_POST['product_id']);
+            if ($product) {
+                Yii::app()->shoppingCart [] = $product;
+                $response = array(
+                    'count' => Yii::app()->shoppingCart->getItemsCount(),
+                    'status' => TRUE,
+                    'total' => Yii::app()->shoppingCart->getCost()
+                );
+            }
+            else {
+                $response = array('status' => FALSE, 'error' => 'Not product found');
+            }
+            header('Content-type: application/json');
+            echo CJavaScript::jsonEncode($response);
+            Yii::app()->end();
+        }
     }
 
 
