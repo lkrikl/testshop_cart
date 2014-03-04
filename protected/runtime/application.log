@@ -6963,3 +6963,11 @@ Stack trace:
 REQUEST_URI=/admin/order?view=about
 HTTP_REFERER=http://yii.ww/admin/product?view=about
 ---
+2014/03/03 17:18:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "site.contact".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('site.contact')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/site.contact
+---

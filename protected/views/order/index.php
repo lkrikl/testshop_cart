@@ -76,22 +76,22 @@ $this->breadcrumbs=array(
     </tr>
     <?php endforeach; ?>
 </table>
-<b><p align="right">
-<?php
-echo 'Всего товаров  - '.Yii::app()->shoppingCart->getItemsCount() . '<br>';
-//   echo $q.'<br>';
-// Сумма всех товаров
-echo 'Общая сумма - '.Yii::app()->shoppingCart->getCost(); //400
-echo '<br>';
-?>
-</p></b>
+        <b><p align="right">
+            <?php
+                echo 'Всего товаров  - '.Yii::app()->shoppingCart->getItemsCount() . '<br>';
+                //   echo $q.'<br>';
+                // Сумма всех товаров
+                echo 'Общая сумма - '.Yii::app()->shoppingCart->getCost(); //400
+                echo '<br>';
+            ?>
+        </p></b>
 <hr>
-
+<p>Основная информация</p>
 <?php if(Yii::app()->user->hasFlash('order')): ?>
 
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('order'); ?>
-</div>
+    <div class="flash-success">
+            <?php echo Yii::app()->user->getFlash('order'); ?>
+    </div>
 
 <?php else: ?>
 
