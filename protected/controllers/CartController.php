@@ -11,5 +11,9 @@ class CartController extends Controller
         echo CJavaScript::jsonEncode(array('count' => $count, 'status' => TRUE));
     }
 
-
+    public function actionClear() {
+        Yii::app()->shoppingCart->clear();
+        
+        $this->render('Clear');
+    }
 }
