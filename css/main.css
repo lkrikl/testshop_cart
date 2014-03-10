@@ -92,6 +92,14 @@ body
     height: 25px;
     cursor: pointer;
 }
+p.add-product {
+    background: url(/images/button_buy_now.gif) no-repeat;
+    display: inline-block;
+    margin: 0;
+    width: 75px;
+    height: 25px;
+    cursor: pointer;
+}
 .clear_scart{
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
@@ -158,7 +166,10 @@ a {
 	font-weight:bold;
 	text-decoration:none;
 	padding:5px 8px;
+        
 }
+
+
 
 #mainmenu ul li a:hover, #mainmenu ul li.active a
 {
@@ -166,6 +177,62 @@ a {
 	background-color:#EFF4FA;
 	text-decoration:none;
 }
+
+
+
+
+
+#usermainmenu
+{
+	//background:white url(bg.gif) repeat-x left top;
+        background: white;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+#usermainmenu ul
+{
+	padding:6px 20px 5px 20px;
+	margin:0px;
+        position: absolute;
+        top: 50px;
+        
+}
+
+#usermainmenu ul li
+{
+	display: inline;
+        
+}
+
+#usermainmenu ul li a
+{
+	color:grey;
+	background-color:transparent;
+	font-size:12px;
+	font-weight:bold;
+	text-decoration:none;
+	padding:5px 8px;
+        
+}
+
+
+
+#usermainmenu ul li a:hover, #usermainmenu ul li.active a
+{
+	color: #6399cd;
+	background-color:#EFF4FA;
+	text-decoration:none;
+}
+
+
+
+
+
 
 div.flash-error, div.flash-notice, div.flash-success
 {
@@ -338,7 +405,7 @@ div.search-form
     float: right;
     border: 1px solid black; 
     position: relative;
-    top: 0px;
+    top: -25px;
     left: 0px;
 }
 #block-cart > p {

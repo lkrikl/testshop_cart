@@ -53,8 +53,8 @@ class Category extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'title' => 'Title',
-			'position' => 'Position',
+			'title' => 'Название',
+			'position' => 'Позиция',
 		);
 	}
 
@@ -109,7 +109,7 @@ class Category extends CActiveRecord
             $array = array();
             
             foreach ($models as $one) {
-                $array[] = array('label'=>$one->title, 'url' => array('/page/index/id/'.$one->id),'visible'=>!Yii::app()->user->isGuest);
+                $array[] = array('label'=>$one->title, 'url' => array('/page/index/id/'.$one->id));
             }
             if ($position == 'top'){
               $array[] = array('label'=>'Вход', 'url'=>array('/site/login#login_form'), 'visible'=>Yii::app()->user->isGuest);

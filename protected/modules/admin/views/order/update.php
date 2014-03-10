@@ -9,13 +9,13 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List Order', 'url'=>array('index')),
-	array('label'=>'Create Order', 'url'=>array('create')),
-	array('label'=>'View Order', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Order', 'url'=>array('admin')),
+	array('label'=>'Журнал заказов', 'url'=>array('index')),
+	array('label'=>'Создать заказ', 'url'=>array('create')),
+	array('label'=>'Просмотр заказа', 'url'=>array('view', 'id'=>$model->id)),
+	
 );
 ?>
 
-<h1>Update Order <?php echo $model->id; ?></h1>
+<h1>Редактировать заказ <?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -108,14 +108,17 @@ class Category extends CActiveRecord
             $array = array();
             
             foreach ($models as $one) {
-                $array[] = array('label'=>$one->title, 'url' => array('/page/index/id/'.$one->id),'visible'=>!Yii::app()->user->isGuest);
+                $array[] = array('label'=>$one->title, 'url' => array('/page/index/id/'.$one->id));
             }
             if ($position == 'top'){
             //    $array[] = array('label'=>'Вход', 'url'=>array('/site/login#login_form'), 'visible'=>Yii::app()->user->isGuest);
              //    $array[] = array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest);
             //     $array[] = array('label'=>'Регистрация', 'url'=>array('/site/registration#login_form'), 'visible'=>Yii::app()->user->isGuest);
             //      $array[] = array('label'=>'Админка', 'url'=>array('/admin/category'), 'visible'=>!Yii::app()->user->isGuest);
-                 $array[] = array('label'=>'Главная', 'url'=>array('/site/index'), 'visible'=>!Yii::app()->user->isGuest);
+                 $array[] = array('label'=>'Главная', 'url'=>array('/site/index')); //'items'=>array(
+//                        array('label'=>'Первый подпункт', 'url'=>array('/site/index')),
+//                        array('label'=>'Второй подпункт', 'url'=>array('/site/index')),
+//                        ));
                        $array[] =        array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest);
                          $array[] =        array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest);
                          $array[] =        array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest);

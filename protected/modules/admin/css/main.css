@@ -99,6 +99,11 @@ body
         border: 1px solid black;
         
 }
+
+.partient {
+    width: 500px;
+}
+
 #nadfooter{
     
     padding-top: 20px;

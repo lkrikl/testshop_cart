@@ -7,40 +7,7 @@ $this->breadcrumbs=array(
 ?>
 <h1>Оформление товара</h1>
 
-<?php
-//$position = Yii::app()->shoppingCart->isEmpty(1);
-//if ($position) {
-//    echo 'Корзина пустая<br>';
-//} else {
-//    echo 'В корзине есть товар в количестве<br>';
-//}
-//// Количество позиций в корзине
-////echo Yii::app()->shoppingCart->getCount() . '<br>';
-//
-//echo '<br>';
-//
-//
-//
-//foreach (Yii::app()->shoppingCart as $one) {
-//    echo $one->image;
-//    echo $one->name . ' - ';
-//    $price = $one->getQuantity();
-//    echo $price . ' - ';
-//    $price = $one->getSumPrice();
-//    echo $price . '<br>';
-//
-//
-//}
-//echo '<br>';
-//
-//// Количество всех товаров
-//echo 'Всего товаров в корзине - '.Yii::app()->shoppingCart->getItemsCount() . '<br>';
-////   echo $q.'<br>';
-//// Сумма всех товаров
-//echo 'Общая сумма - '.Yii::app()->shoppingCart->getCost(); //400
-//echo '<br>';
-//
-//?>
+
 
 <table>
     <tr>
@@ -67,7 +34,7 @@ $this->breadcrumbs=array(
             <?php echo $one->name; ?>
         </td>
         <td>
-            <?php $price = $one->getQuantity(); echo $price . ' - '; ?>
+            <?php $price = $one->getQuantity(); echo $price . '  '; ?>
         </td>
         <td>
             <?php $price = $one->getSumPrice(); echo $price . '<br>'; ?>
@@ -86,16 +53,17 @@ $this->breadcrumbs=array(
             ?>
         </p></b>
 <hr>
-<p>Основная информация</p>
-<?php if(Yii::app()->user->hasFlash('order')): ?>
+    <?php if(Yii::app()->shoppingCart->isEmpty(1)) :   ?>
 
-    <div class="flash-success">
-            <?php echo Yii::app()->user->getFlash('order'); ?>
-    </div>
+        <h4>Товаров для заказа нет</h4>
 
-<?php else: ?>
+    <?php else: ?>
 
-<?php
-    echo $this->renderPartial('orderform',array('model' => $orderform));
-?>
-<?php endif;?>
+        <p>Основная информация</p>
+        <p class="messagecart"></p>    
+
+            <?php
+                echo $this->renderPartial('orderform',array('model' => $orderform));
+            ?>
+
+    <?php endif; ?>

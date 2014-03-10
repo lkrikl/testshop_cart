@@ -3,13 +3,13 @@
 /* @var $model Order */
 
 $this->breadcrumbs=array(
-	'Orders'=>array('index'),
-	'Manage',
+	'Заказы'=>array('index'),
+	'Журнал заказов',
 );
 
 $this->menu=array(
-	array('label'=>'List Order', 'url'=>array('index')),
-	array('label'=>'Create Order', 'url'=>array('create')),
+	
+	array('label'=>'Создать заказ', 'url'=>array('create')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -64,8 +64,18 @@ $('.search-form form').submit(function(){
 		'user_phone',
 		'user_comment',
 	//	'ip_address',
-		'created',
-		'updated',
+		'created' => array(
+                    'name' => 'created',
+                    'value' => 'date("j.m.Y H:i", $data->created)',
+                    'filter' => false,           
+                    'headerHtmlOptions' => array('width'=>70),
+                ),
+		'updated' => array(
+                    'name' => 'updated',
+                    'value' => 'date("j.m.Y H:i", $data->created)',
+                    'filter' => false,           
+                    'headerHtmlOptions' => array('width'=>70),
+                ),
 	//	'discount',
 		'admin_comment',
 		

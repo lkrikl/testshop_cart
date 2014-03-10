@@ -99,6 +99,13 @@ return array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
+                                array(
+                                    'class' => 'CWebLogRoute',
+                                        'enabled' => YII_DEBUG,
+                                        'levels' => 'error, warning, trace, notice',
+                                        'categories' => 'application',
+                                        'showInFireBug' => false,
+                                ),
 				// uncomment the following to show log messages on web pages
 				/*
 				array(

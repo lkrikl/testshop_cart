@@ -57,7 +57,12 @@
     </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton('Оформить'); ?>
+        <?php echo CHtml::submitButton('Оформить', array(
+            
+            'class' => 'add',
+            'id' => 'addd'
+            )); 
+        ?>
     </div>
 
 <?php $this->endWidget(); ?>

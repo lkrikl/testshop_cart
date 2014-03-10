@@ -14,21 +14,21 @@ $(document).ready(function () {
         cart_products_count++;
 
         $('#block-cart span.count').html(cart_products_count);
-
-        $(document).mousemove(function (pos) {
-                (".messagecart").css('left', (pos.pageX + 10) + 'px').css('top', (pos.pageY + 10) + 'px');
-            }
-        );
-
+        
         $(".messagecart").html("Добавляю...").show();
+
         $.ajax({
             type: "POST",
             url: "/cart",
             dataType: "html",
-            data: {"tovarid": product_id},
+            data: {"product_id": product_id},
             success: function (data) {
-                $(".messagecart").html("Добавлено в корзину!");
-                setTimeout('$(".messagecart").hide();', 1600);
+                data = $.parseJSON(data);
+                if (data.status) {
+                    $('#price').text(data.total);
+                    $(".messagecart").html("Добавлено в корзину!");
+                    setTimeout('$(".messagecart").hide();', 1600);
+                }
             }
 
         });

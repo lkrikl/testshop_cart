@@ -13,6 +13,7 @@
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/clear.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/js/orderproduct.js"></script>
       
         
 	<?php //echo Yii::app()->bootstrap->register(); ?> 
@@ -38,11 +39,9 @@
                     <a href="">Сотрудничество </a>
                     <a href="">О компании </a>
                     <a href="">Связаться с нами </a>
+                    
                 </class>   
-                <class id="logreg">
-                    <a href="">Войти </a> или
-                    <a href="">Зарегистрироваться </a>
-                </class>  
+               
             
                              <div id="block-cart">
                                 <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
@@ -58,6 +57,7 @@
 
                                     </div>
                              </div>
+            
         </div>
         <!-- mainmenu -->
 	<div id="mainmenu">

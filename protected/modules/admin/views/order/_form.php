@@ -44,14 +44,14 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'total_price'); ?>
-		<?php echo $form->textField($model,'total_price'); ?>
-		<?php echo $form->error($model,'total_price'); ?>
+		<?php // echo $form->labelEx($model,'total_price'); ?>
+		<?php //echo $form->textField($model,'total_price'); ?>
+		<?php //echo $form->error($model,'total_price'); ?>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'status_id'); ?>
-		<?php echo $form->textField($model,'status_id'); ?>
+		<?php echo $form->dropDownList($model,'status_id', array(1=>"Новый",0=>"Доставлен")); ?>
 		<?php echo $form->error($model,'status_id'); ?>
 	</div>
 
@@ -97,17 +97,7 @@
 		<?php// echo $form->error($model,'ip_address'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'created'); ?>
-		<?php echo $form->textField($model,'created'); ?>
-		<?php echo $form->error($model,'created'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updated'); ?>
-		<?php echo $form->textField($model,'updated'); ?>
-		<?php echo $form->error($model,'updated'); ?>
-	</div>
+	
 
 	<div class="row">
 		<?php// echo $form->labelEx($model,'discount'); ?>
@@ -122,7 +112,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Сохранить' : 'Редактировать'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

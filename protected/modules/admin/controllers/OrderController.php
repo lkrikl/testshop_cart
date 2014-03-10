@@ -51,8 +51,10 @@ class OrderController extends Controller
 	 */
 	public function actionView($id)
 	{
+         //       $result = Orderproduct::model()->findAllByAttributes(array('order_id'=> $model->id));
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
+           //             'result' => $result
 		));
 	}
 

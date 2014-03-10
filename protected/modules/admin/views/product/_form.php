@@ -33,7 +33,7 @@
 
 	<div class="row">
             <?php echo $form->labelEx($model,'image'); ?>
-            <?php $this->widget('application.extensions.ckeditor.CKEditor', array( 
+            <?php $this->widget('ext.ckeditor.CKEditor', array( 
                 'model'=>$model,
                 'attribute'=>'image',
                 'language'=>'ru',
@@ -57,7 +57,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Сохранить'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

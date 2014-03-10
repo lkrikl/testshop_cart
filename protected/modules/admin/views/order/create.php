@@ -4,12 +4,12 @@
 
 $this->breadcrumbs=array(
 	'Orders'=>array('index'),
-	'Create',
+	'Создать заказ',
 );
 
 $this->menu=array(
-	array('label'=>'List Order', 'url'=>array('index')),
-	array('label'=>'Manage Order', 'url'=>array('admin')),
+	array('label'=>'Журнал заказов', 'url'=>array('index')),
+	
 );
 ?>
 

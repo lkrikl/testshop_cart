@@ -58,9 +58,9 @@
 				array('label'=>'Заказы', 'url'=>array('/admin/order', 'view'=>'about')),
                                 array('label'=>'Категории', 'url'=>array('/admin/category', 'view'=>'about')),
                                 array('label'=>'Товары', 'url'=>array('/admin/product', 'view'=>'about')),
-                                array('label'=>'Contact', 'url'=>array('/site/contact')),
-				array('label'=>'Login', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
-				array('label'=>'Logout ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
+                                
+				array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+				array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>
              
