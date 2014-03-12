@@ -30,21 +30,19 @@ class SiteController extends Controller
 	public function actionIndex()
 	{
             
-                
-            $address = new Test;
-             
-          
-               if(isset($_POST['Test']))
-        {
-            $address->attributes=$_POST['Test'];
-            if($address->save()){
-                Yii::app()->user->setFlash('test','Ваши данные отправлены');
-            }
-        }     
+                $product = Product::model()->findAll();
+            
             
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index',array('address'=>$address));
+		$this->render('index',array('product'=>$product));
+	}
+        public function actionView($id)
+	{
+            
+                $model = Product::model()->findByPk($id);
+            
+		$this->render('view', array('model'=>$model));
 	}
 
 	/**

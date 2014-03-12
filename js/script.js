@@ -11,7 +11,7 @@ $(document).ready(function () {
 
     $('.add-product').click(function () {
         var product_id = $(this).data("id");
-        cart_products_count++;
+        //cart_products_count++;
 
         $('#block-cart span.count').html(cart_products_count);
         
@@ -26,6 +26,7 @@ $(document).ready(function () {
                 data = $.parseJSON(data);
                 if (data.status) {
                     $('#price').text(data.total);
+                    $('#block-cart span.count').text(data.count);
                     $(".messagecart").html("Добавлено в корзину!");
                     setTimeout('$(".messagecart").hide();', 1600);
                 }

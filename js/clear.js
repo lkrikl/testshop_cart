@@ -3,10 +3,10 @@ $(document).ready(function () {
 
     $('.clear_cart').click(function () {
         var product_id = $(this).data("id");
-        //cart_products_count++;
-
-        //$('#block-cart span.count').html(cart_products_count);
-
+        var count = 0;
+        var price = 0;
+        $('#block-cart span.count').html(count);
+        $('#price').text(price);
         
 
         $(".messagecart").html("Подготовка...").show();

@@ -5,12 +5,13 @@ class OrderController extends Controller
 	public function actionIndex()
 	{
                 $orderform = new Order;
+       //         $models = NovaPoshtaCities::model()->findAll();
                 if(isset($_POST['Order']))
                 {
                     $orderform->attributes=$_POST['Order'];
                     if($orderform->save()){
                         
-                       
+                       Yii::app()->user->setFlash('contact','Спасибо. Ваш заказ принят.');
                    
                         
                         
@@ -40,7 +41,7 @@ class OrderController extends Controller
                              }
 
                         Yii::app()->shoppingCart->clear();
-                        $this->redirect(array('view','id'=>$model->id));
+                        $this->redirect(array('view','id'=>$model->id,'models'=>$models));
                         
                     } 
                 }

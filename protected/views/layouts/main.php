@@ -13,7 +13,8 @@
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/clear.js"></script>
-        <script src="<?php echo Yii::app()->baseUrl; ?>/js/orderproduct.js"></script>
+       
+         
       
         
 	<?php //echo Yii::app()->bootstrap->register(); ?> 
@@ -30,7 +31,7 @@
 <div class="container" id="page">
 
 	<div id="header">
-		
+            <a href="/"> <img src="/images/Home_page.png"></a>	
 	</div><!-- header -->
         <div id="nadfooter">
             <!--img src="/images/logo_axioma.png"-->
@@ -57,6 +58,22 @@
 
                                     </div>
                              </div>
+            
+            <form class="form_search" method="post" action="/search" target="_blank">
+            <?php 
+                $this->widget('CAutoComplete',
+                array(
+                    'model'=>'product',
+                    'name'=>'product_name',
+                    'url'=>array('/search/autocomplete'),
+                    'minChars'=>2,
+
+                  //  'value'=>'поиск',
+                )
+            );
+            ?>
+                
+            </form>
             
         </div>
         <!-- mainmenu -->

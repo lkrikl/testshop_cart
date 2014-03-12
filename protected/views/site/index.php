@@ -8,20 +8,22 @@ $this->pageTitle = Yii::app()->name;
 
 
 
-<div id="usermainmenu">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			 'items'=>  array(
-                                 array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest),
-                               array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest),
-                               array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest),
-                              array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest),
-                         
-			),
-                         
-		)); ?>
-             
+
+<div id="centerLayer">
+    <?php foreach($product as $one): ?>
+    <div class="product_block">
+        <?php echo CHtml::link($one->image,array('view','id'=>$one->id)); ?>
+        <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b>
+        <br />
+        <?php echo $one->price; ?><br />
+        <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
+    </div>
+    <?php endforeach; ?>
+    <?php if (!$product)    echo 'В данной категории товаров нет.'; ?>
 </div>
 
-<?php 
- 
-?>
+               
+             <p class="messagecart"></p>
+             
+             
+             

@@ -5,9 +5,16 @@ $this->breadcrumbs=array(
 	'Оформление товара',
 );
 ?>
+<?php if(Yii::app()->user->hasFlash('contact')): ?>
+
+<div class="flash-success">
+	<?php echo Yii::app()->user->getFlash('contact'); ?>
+</div>
+
+<?php else: ?>
+
+
 <h1>Оформление товара</h1>
-
-
 
 <table>
     <tr>
@@ -65,5 +72,71 @@ $this->breadcrumbs=array(
             <?php
                 echo $this->renderPartial('orderform',array('model' => $orderform));
             ?>
+         
+         <form class="nova" method="post" action="/order" target="_blank">
+         <pre>
+                <?php 
+             
+             
+             $nova = NovaPoshtaCities::model()->findAll(array('order'=>'name_ru'));  
+//             print_r($nova);
+             $a = CHtml::listData($nova, 'id', 'name_ru');
+             echo '<br>';
+             echo 'Укажите город доставки ';
+             echo CHtml::dropDownList('drop', '', $a,array(
+              'prompt'=>'',
+              'ajax' => array(
+              'type'=>'POST', 
+              'url'=>'/dynamiccities', 
+              'update'=>'#address', 
+            'data'=>array('drop'=>'js:this.value'),
+            ))); 
+             
+             echo '<br>';
+              
+             $ware = NovaposhtaWarehouse::model()->findAllByAttributes(array('city_id'=>$_POST[drop]));   
+             $q = CHtml::listData($ware, 'id', 'address_ru'); 
+             echo 'Укажите отделение доставки ';
+             echo CHtml::dropDownList('address', '', $q); 
+             
+             echo '<br>';
+//             print_r($q);
+//             print_r(array_keys($q));
+             echo '<br>';
+             echo CHtml::submitButton('Проба');
+           //  print_r($a);
+             ?></pre>
+        </form>
+       
 
-    <?php endif; ?>
+
+
+
+        <?php                                   
+//            echo CHtml::dropDownList('region_id','', 
+//            array(2=>'New England',1=>'Middle Atlantic',3=>'East North Central'),
+//
+//            array(
+//              'prompt'=>'Select Region',
+//              'ajax' => array(
+//              'type'=>'POST', 
+//              'url'=>'/dynamiccities', 
+//              'update'=>'#city_name', 
+//            'data'=>array('region_id'=>'js:this.value'),
+//                  
+//            ))); 
+//
+//
+//
+//            echo CHtml::dropDownList('city_name','', array(), array('prompt'=>'Select City'));
+         ?>
+       
+            
+           
+        
+<?php endif; ?>
+<?php endif; ?>
+
+        
+        
+   
