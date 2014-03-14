@@ -17,8 +17,5 @@ $this->breadcrumbs=array(
     <?php endforeach; ?>
     <?php if (!$models)    echo "По запросу - <b>$_POST[q]</b> - ничего не найдено"; ?>
 </div>
-
-               
+              
              <p class="messagecart"></p>
-             
-<?php print_r($_POST); ?>

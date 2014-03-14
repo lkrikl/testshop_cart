@@ -19,12 +19,25 @@
 
     <?php echo $form->errorSummary($model); ?>
 
+    <div class="row">
+        <?php// echo $form->labelEx($model,'settlement_delivery'); ?>
+        <?php echo $form->hiddenField($model,'settlement_delivery',array('size'=>60,'maxlength'=>100)); ?>
+        <?php echo $form->error($model,'settlement_delivery'); ?>
+    </div>
+
+    <div class="row">
+        <?php// echo $form->labelEx($model,'delivery_address'); ?>
+        <?php echo $form->hiddenField($model,'delivery_address', array('size'=>60,'maxlength'=>100)); ?>
+        <?php echo $form->error($model,'delivery_address'); ?>
+    </div>
     
+    <div class="row">
+        <?php// echo $form->labelEx($model,'type_of_delivery'); ?>
+        <?php echo $form->hiddenField($model,'type_of_delivery',array('size'=>25,'maxlength'=>25)); ?>
+        <?php echo $form->error($model,'type_of_delivery'); ?>
+    </div>
 
-   
-
-   
-
+    
     <div class="row">
         <?php echo $form->labelEx($model,'user_name'); ?>
         <?php echo $form->textField($model,'user_name',array('size'=>60,'maxlength'=>100)); ?>
@@ -42,7 +55,7 @@
         <?php echo $form->textField($model,'user_phone',array('size'=>30,'maxlength'=>30)); ?>
         <?php echo $form->error($model,'user_phone'); ?>
     </div>
-
+    
     <div class="row">
         <?php echo $form->labelEx($model,'user_address'); ?>
         <?php echo $form->textField($model,'user_address',array('size'=>60,'maxlength'=>255)); ?>

@@ -96,9 +96,8 @@ class Category extends CActiveRecord
 		return parent::model($className);
 	}
         
-         public static function all(){
-            
-            
+        public static function all(){
+                        
             return CHtml::listData(self::model()->findAll(),'id','title');
         }
         
@@ -109,7 +108,7 @@ class Category extends CActiveRecord
             $array = array();
             
             foreach ($models as $one) {
-                $array[] = array('label'=>$one->title, 'url' => array('/page/index/id/'.$one->id));
+                $array[] = array('label'=>$one->title, 'url' => array('/product/index/id/'.$one->id));
             }
             if ($position == 'top'){
               $array[] = array('label'=>'Вход', 'url'=>array('/site/login#login_form'), 'visible'=>Yii::app()->user->isGuest);

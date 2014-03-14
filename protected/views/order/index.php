@@ -1,142 +1,125 @@
 <?php
 /* @var $this OrderController */
 
-$this->breadcrumbs=array(
-	'Оформление товара',
+$this->breadcrumbs = array(
+    'Оформление товара',
 );
 ?>
-<?php if(Yii::app()->user->hasFlash('contact')): ?>
+<?php if (Yii::app()->user->hasFlash('contact')): ?>
 
-<div class="flash-success">
-	<?php echo Yii::app()->user->getFlash('contact'); ?>
-</div>
+    <div class="flash-success">
+        <?php echo Yii::app()->user->getFlash('contact'); ?>
+    </div>
+    <div id="view_order">Просмотр заказа № <?php echo $orderform->id;?></div>
+    <div id="ordering_Information">
+        <table>
+            <tr>
+                <td>
+                    <b>Название</b>
+                </td>
+                <td>
+                    <b>Количество</b>
+                </td>
+                <td>
+                    <b>Сумма</b>
+                </td>
+            </tr>
+            <?php foreach($ordered_product as $one): ?> 
+            <tr>
+                <td>
+                    <?php echo $one->name; ?>
+                </td>
+                <td>
+                    <?php echo $one->quantity; ?>
+                </td>
+                <td>
+                    <?php echo $one->price; ?>
+                </td>
+            </tr>
+            <?php endforeach; ?>
+        </table>
+        <div>
+            Всего к оплате: <b><?php echo $total_price; ?> $</b>
+        </div>
+        <div id="recipient_data">
+            <h3>Данные получателя</h3>
+            <p><b>Ф.И.О.: </b><?php echo $orderform->user_name ?></p>
+            <p><b>E-mail: </b><?php echo $orderform->user_email ?></p>
+            <p><b>Адрес: </b><?php echo $orderform->user_address ?></p>
+            <p><b>Телефон: </b><?php echo $orderform->user_phone?></p>
+        </div>
+    </div>
 
 <?php else: ?>
 
+    <h1>Оформление товара</h1>
 
-<h1>Оформление товара</h1>
-
-<table>
-    <tr>
-        <td>
-            Фото
-        </td>
-        <td>
-            Наименование товара
-        </td>
-        <td>
-            Количество
-        </td>
-        <td>
-            Цена
-        </td>
-        
-    </tr>
-     <?php foreach(Yii::app()->shoppingCart as $one): ?>
-    <tr>
-        <td>
-            <?php echo $one->image; ?>
-        </td>
-        <td>
-            <?php echo $one->name; ?>
-        </td>
-        <td>
-            <?php $price = $one->getQuantity(); echo $price . '  '; ?>
-        </td>
-        <td>
-            <?php $price = $one->getSumPrice(); echo $price . '<br>'; ?>
-        </td>
-       
-    </tr>
-    <?php endforeach; ?>
-</table>
-        <b><p align="right">
+    <table>
+        <tr>
+            <td>
+                Фото
+            </td>
+            <td>
+                Наименование товара
+            </td>
+            <td>
+                Количество
+            </td>
+            <td>
+                Цена
+            </td>
+        </tr>
+        <?php foreach (Yii::app()->shoppingCart as $one): ?>
+            <tr>
+                <td>
+                    <?php echo $one->image; ?>
+                </td>
+                <td>
+                    <?php echo $one->name; ?>
+                </td>
+                <td>
+                    <?php $price = $one->getQuantity();
+                    echo $price . '  '; ?>
+                </td>
+                <td>
+                    <?php $price = $one->getSumPrice();
+                    echo $price . '<br>'; ?>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+    <b><p align="right">
             <?php
-                echo 'Всего товаров  - '.Yii::app()->shoppingCart->getItemsCount() . '<br>';
-                //   echo $q.'<br>';
-                // Сумма всех товаров
-                echo 'Общая сумма - '.Yii::app()->shoppingCart->getCost(); //400
-                echo '<br>';
+            echo 'Всего товаров  - ' . Yii::app()->shoppingCart->getItemsCount() . '<br>';
+            //   echo $q.'<br>';
+            // Сумма всех товаров
+            echo 'Общая сумма - ' . Yii::app()->shoppingCart->getCost(); //400
+            echo '<br>';
             ?>
         </p></b>
-<hr>
-    <?php if(Yii::app()->shoppingCart->isEmpty(1)) :   ?>
+    <hr>
+    <?php if (Yii::app()->shoppingCart->isEmpty(1)) : ?>
 
         <h4>Товаров для заказа нет</h4>
 
     <?php else: ?>
-
-        <p>Основная информация</p>
-        <p class="messagecart"></p>    
-
-            <?php
-                echo $this->renderPartial('orderform',array('model' => $orderform));
-            ?>
-         
-         <form class="nova" method="post" action="/order" target="_blank">
-         <pre>
-                <?php 
-             
-             
-             $nova = NovaPoshtaCities::model()->findAll(array('order'=>'name_ru'));  
-//             print_r($nova);
-             $a = CHtml::listData($nova, 'id', 'name_ru');
-             echo '<br>';
-             echo 'Укажите город доставки ';
-             echo CHtml::dropDownList('drop', '', $a,array(
-              'prompt'=>'',
-              'ajax' => array(
-              'type'=>'POST', 
-              'url'=>'/dynamiccities', 
-              'update'=>'#address', 
-            'data'=>array('drop'=>'js:this.value'),
-            ))); 
-             
-             echo '<br>';
-              
-             $ware = NovaposhtaWarehouse::model()->findAllByAttributes(array('city_id'=>$_POST[drop]));   
-             $q = CHtml::listData($ware, 'id', 'address_ru'); 
-             echo 'Укажите отделение доставки ';
-             echo CHtml::dropDownList('address', '', $q); 
-             
-             echo '<br>';
-//             print_r($q);
-//             print_r(array_keys($q));
-             echo '<br>';
-             echo CHtml::submitButton('Проба');
-           //  print_r($a);
-             ?></pre>
-        </form>
-       
-
-
-
-
-        <?php                                   
-//            echo CHtml::dropDownList('region_id','', 
-//            array(2=>'New England',1=>'Middle Atlantic',3=>'East North Central'),
-//
-//            array(
-//              'prompt'=>'Select Region',
-//              'ajax' => array(
-//              'type'=>'POST', 
-//              'url'=>'/dynamiccities', 
-//              'update'=>'#city_name', 
-//            'data'=>array('region_id'=>'js:this.value'),
-//                  
-//            ))); 
-//
-//
-//
-//            echo CHtml::dropDownList('city_name','', array(), array('prompt'=>'Select City'));
-         ?>
-       
-            
+        <?php echo CHtml::checkBox(choice_of_delivery); ?> Доставка Новой Почтой
+        <div id="new_mail_delivery">
+        <p>Населенный пункт</p>
+        <?php echo CHtml::dropDownList('drop', '', $nova_cities, array('empty'=>'')); ?>
+        <div id="loader"><img src="/images/loading.gif"></div>
+        <div id="warehouseContainer"></div>
+        </div>
+        <h3>Основная информация</h3>
+        <p class="messagecart"></p>
+        <?php  echo $this->renderPartial('orderform', array(
+            'model' => $orderform,
+            'nova_cities'=>$nova_cities
+            ));  
+        ?>
            
-        
-<?php endif; ?>
+    <?php endif; ?>
 <?php endif; ?>
 
         
         
-   

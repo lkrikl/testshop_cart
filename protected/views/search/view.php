@@ -13,6 +13,7 @@ $this->breadcrumbs=array(
     
     
 ?>
+<p class="messagecart"></p>
     <hr>
     <p class="add-product" data-id="<?php ECHO $model->id; ?>"></p>
     <hr>

@@ -5,6 +5,7 @@ $this->breadcrumbs=array(
 	$model->name,
 );
 ?>
+<p class="messagecart"></p>
 
 <?php
     echo $model->image;
@@ -21,5 +22,4 @@ $this->breadcrumbs=array(
 <?php 
         echo $model->description;
 ?>
-
 

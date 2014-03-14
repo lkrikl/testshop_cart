@@ -8,6 +8,9 @@
  * @property integer $user_id
  * @property string $secret_key
  * @property integer $delivery_id
+ * @property string $settlement_delivery
+ * @property string $delivery_address
+ * @property string $type_of_delivery
  * @property double $delivery_price
  * @property double $total_price
  * @property integer $status_id
@@ -18,8 +21,8 @@
  * @property string $user_phone
  * @property string $user_comment
  * @property string $ip_address
- * @property string $created
- * @property string $updated
+ * @property integer $created
+ * @property integer $updated
  * @property string $discount
  * @property string $admin_comment
  */
@@ -41,20 +44,21 @@ class Order extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-                        array('user_name, user_phone, user_address', 'required'),
+			array('user_name, user_address, user_phone', 'required'),
                         array('user_email', 'email'),
-			array('user_id, delivery_id, status_id, paid', 'numerical', 'integerOnly'=>true),
+			array('user_id, delivery_id, status_id, paid, created, updated', 'numerical', 'integerOnly'=>true),
 			array('delivery_price, total_price', 'numerical'),
 			array('secret_key', 'length', 'max'=>10),
+			array('settlement_delivery, ip_address', 'length', 'max'=>50),
+			array('delivery_address, user_address, discount', 'length', 'max'=>255),
+			array('type_of_delivery', 'length', 'max'=>25),
 			array('user_name, user_email', 'length', 'max'=>100),
-			array('user_address, discount', 'length', 'max'=>255),
 			array('user_phone', 'length', 'max'=>30),
 			array('user_comment', 'length', 'max'=>500),
-			array('ip_address', 'length', 'max'=>50),
-			array('created, updated, admin_comment', 'safe'),
+			array('admin_comment', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, user_id, secret_key, delivery_id, delivery_price, total_price, status_id, paid, user_name, user_email, user_address, user_phone, user_comment, ip_address, created, updated, discount, admin_comment', 'safe', 'on'=>'search'),
+			array('id, user_id, secret_key, delivery_id, settlement_delivery, delivery_address, type_of_delivery, delivery_price, total_price, status_id, paid, user_name, user_email, user_address, user_phone, user_comment, ip_address, created, updated, discount, admin_comment', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -66,7 +70,9 @@ class Order extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                   
+                    'novaposhtacities' => array(self::BELONGS_TO,'novaposhtacities', 'settlement_delivery'),
+                    'novaposhtawarehouse' => array(self::BELONGS_TO,'novaposhtawarehouse', 'delivery_address'),
+                    
 		);
 	}
 
@@ -80,6 +86,9 @@ class Order extends CActiveRecord
 			'user_id' => 'User',
 			'secret_key' => 'Secret Key',
 			'delivery_id' => 'Delivery',
+			'settlement_delivery' => 'Населенный пункт доставки',
+			'delivery_address' => 'Адрес доставки',
+			'type_of_delivery' => 'Тип доставки',
 			'delivery_price' => 'Delivery Price',
 			'total_price' => 'Total Price',
 			'status_id' => 'Status',
@@ -119,6 +128,9 @@ class Order extends CActiveRecord
 		$criteria->compare('user_id',$this->user_id);
 		$criteria->compare('secret_key',$this->secret_key,true);
 		$criteria->compare('delivery_id',$this->delivery_id);
+		$criteria->compare('settlement_delivery',$this->settlement_delivery,true);
+		$criteria->compare('delivery_address',$this->delivery_address,true);
+		$criteria->compare('type_of_delivery',$this->type_of_delivery,true);
 		$criteria->compare('delivery_price',$this->delivery_price);
 		$criteria->compare('total_price',$this->total_price);
 		$criteria->compare('status_id',$this->status_id);
@@ -129,13 +141,14 @@ class Order extends CActiveRecord
 		$criteria->compare('user_phone',$this->user_phone,true);
 		$criteria->compare('user_comment',$this->user_comment,true);
 		$criteria->compare('ip_address',$this->ip_address,true);
-		$criteria->compare('created',$this->created,true);
-		$criteria->compare('updated',$this->updated,true);
+		$criteria->compare('created',$this->created);
+		$criteria->compare('updated',$this->updated);
 		$criteria->compare('discount',$this->discount,true);
 		$criteria->compare('admin_comment',$this->admin_comment,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
+                        'pagination'=>false,
 		));
 	}
 

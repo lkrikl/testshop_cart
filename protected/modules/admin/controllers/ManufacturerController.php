@@ -1,6 +1,6 @@
 <?php
 
-class OrderController extends Controller
+class ManufacturerController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -29,15 +29,15 @@ class OrderController extends Controller
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
 				'actions'=>array('index','view'),
-				'users'=>array('nikolay'),
+				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('nikolay'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('nikolay'),
+				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -51,10 +51,8 @@ class OrderController extends Controller
 	 */
 	public function actionView($id)
 	{
-         //       $result = Orderproduct::model()->findAllByAttributes(array('order_id'=> $model->id));
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-           //             'result' => $result
 		));
 	}
 
@@ -64,16 +62,16 @@ class OrderController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Order;
+		$model=new Manufacturer;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Order']))
+		if(isset($_POST['Manufacturer']))
 		{
-			$model->attributes=$_POST['Order'];
+			$model->attributes=$_POST['Manufacturer'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('create',array(
@@ -93,11 +91,11 @@ class OrderController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Order']))
+		if(isset($_POST['Manufacturer']))
 		{
-			$model->attributes=$_POST['Order'];
+			$model->attributes=$_POST['Manufacturer'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('index'));
 		}
 
 		$this->render('update',array(
@@ -118,18 +116,16 @@ class OrderController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
-
 	
-
 	/**
 	 * Manages all models.
 	 */
 	public function actionIndex()
 	{
-		$model=new Order('search');
+		$model=new Manufacturer('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Order']))
-			$model->attributes=$_GET['Order'];
+		if(isset($_GET['Manufacturer']))
+			$model->attributes=$_GET['Manufacturer'];
 
 		$this->render('index',array(
 			'model'=>$model,
@@ -140,12 +136,12 @@ class OrderController extends Controller
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Order the loaded model
+	 * @return Manufacturer the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Order::model()->findByPk($id);
+		$model=Manufacturer::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -153,11 +149,11 @@ class OrderController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Order $model the model to be validated
+	 * @param Manufacturer $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='order-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='manufacturer-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();

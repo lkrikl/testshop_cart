@@ -46,6 +46,11 @@ $('.search-form form').submit(function(){
                     'name' => 'id',
                     'headerHtmlOptions' => array('width'=>20),
                 ),
+                'manufacturer_id'=> array(
+                    'name' => 'manufacturer_id',
+                    'value' => '$data->manufacturer->url',
+                    'filter' => Manufacturer::all(), 
+                    ),
 		'name',
 		'price' => array(
                     'name' => 'price',

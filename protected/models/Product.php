@@ -30,7 +30,7 @@ class Product extends CActiveRecord implements IECartPosition
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, price, image, category_id, description', 'required'),
+			array('name, price, manufacturer_id, image, category_id, description', 'required'),
 			array('created, category_id', 'numerical', 'integerOnly'=>true),
 			array('price', 'numerical'),
 			array('name', 'length', 'max'=>25),
@@ -48,7 +48,9 @@ class Product extends CActiveRecord implements IECartPosition
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'category' => array(self::BELONGS_TO,'category', 'category_id')
+                    'category' => array(self::BELONGS_TO,'category', 'category_id'),
+                    'manufacturer' => array(self::BELONGS_TO,'manufacturer', 'manufacturer_id'),
+                    
 		);
 	}
 
@@ -59,12 +61,13 @@ class Product extends CActiveRecord implements IECartPosition
 	{
 		return array(
 			'id' => 'ID',
-			'name' => 'Name',
-			'price' => 'Price',
-			'image' => 'Image',
-			'created' => 'Created',
-			'category_id' => 'Category',
-			'description' => 'Description',
+                        'manufacturer_id' => 'Производитель',
+			'name' => 'Название',
+			'price' => 'Цена',
+			'image' => 'Изображение',
+			'created' => 'Дата добавления',
+			'category_id' => 'Категория',
+			'description' => 'Описание',
 		);
 	}
 
@@ -87,12 +90,14 @@ class Product extends CActiveRecord implements IECartPosition
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+                $criteria->compare('manufacturer_id',$this->manufacturer_id);
 		$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price);
 		$criteria->compare('image',$this->image,true);
 		$criteria->compare('created',$this->created);
 		$criteria->compare('category_id',$this->category_id);
 		$criteria->compare('description',$this->description,true);
+                
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

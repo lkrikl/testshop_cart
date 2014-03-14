@@ -33,7 +33,7 @@
 	<div id="header">
             <a href="/"> <img src="/images/Home_page.png"></a>	
 	</div><!-- header -->
-        <div id="nadfooter">
+        <div id="nadfooter"> 
             <!--img src="/images/logo_axioma.png"-->
                 <class id="headinfo">
                     <a href="">Оплата и доставка </a>
@@ -41,7 +41,7 @@
                     <a href="">О компании </a>
                     <a href="">Связаться с нами </a>
                     
-                </class>   
+                </class>  
                
             
                              <div id="block-cart">
@@ -54,7 +54,7 @@
                                             <?php echo Yii::app()->shoppingCart->getCost();?>
                                             </span>
                                         </p><a href="#" class="clear_cart"/>Очистить</a>
-                                        <a href="http://yii.ww/order">Оформить</a>
+                                        <a href="/order">Оформить</a>
 
                                     </div>
                              </div>
@@ -81,7 +81,22 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			 'items'=>  Category::menu('top'),
 		)); ?>
+            
+            
              
+        </div>
+        <div id="usermainmenu">
+            <?php $this->widget('zii.widgets.CMenu',array(
+                                        'items'=>array(
+                                                array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
+                                                array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
+                                                array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
+                                                array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
+
+
+                                        ),
+                                            )); 
+                             ?>
         </div>
         
 	<?php if(isset($this->breadcrumbs)):?>
@@ -93,13 +108,14 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
-        <div id="nadfooter">EMAIL ТЕЛЕФОН АДРЕС</div>
+        <div id="nadfooter">EMAIL ТЕЛЕФОН АДРЕС </div>
 	<div id="footer">
 		
 		<?php echo Yii::powered(); ?>&copy; <?php echo date('Y'); ?>
 	</div><!-- footer -->
 
 </div><!-- page -->
+<div id="message_cart"><p>Товар добавлен в корзину</p></div>
     <script type="text/javascript">
         var cart_products_count = <?php echo Yii::app()->shoppingCart->getItemsCount(); ?>
     </script>

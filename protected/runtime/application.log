@@ -13163,3 +13163,1374 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2014/03/12 22:48:50 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Order".
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (11)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 22:51:27 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Order".
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (11)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 22:52:45 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Order".
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (11)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 22:53:05 [warning] [application] Не удалось присвоить небезопасный атрибут "id" класса "Order".
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (11)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:04:17 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(52): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\index.php (93)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (52)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:07:24 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(52): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\index.php (93)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (52)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:08:18 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(52): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\index.php (93)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (52)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:09:48 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(53): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\index.php (93)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (53)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:09:55 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(53): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\index.php (93)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (53)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/12 23:26:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "warehouse".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('warehouse')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('warehouse')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('novaposhta/ware...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/novaposhta/warehouse
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/13 09:52:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/13 11:37:14 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\views\order\orderform.php(24): CActiveForm->dropDownList()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#2 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#3 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#4 X:\home\yii.ww\www\protected\views\order\index.php(69): OrderController->renderPartial()
+#5 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#6 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#7 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#8 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#9 X:\home\yii.ww\www\protected\controllers\OrderController.php(48): OrderController->render()
+#10 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#11 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#13 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#15 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\orderform.php (24)
+in X:\home\yii.ww\www\protected\views\order\index.php (69)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (48)
+2014/03/13 12:16:25 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.category_id".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('category_id')
+#1 X:\home\yii.ww\www\framework\web\helpers\CHtml.php(2529): CActiveRecord->__get('category_id')
+#2 X:\home\yii.ww\www\framework\web\helpers\CHtml.php(1802): CHtml::resolveValue(Object(Order), 'category_id')
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(101): CHtml::activeDropDownList(Object(Order), 'category_id', Array, Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(116): CDataColumn->renderFilterCellContent()
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(532): CGridColumn->renderFilterCell()
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(510): CGridView->renderFilter()
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(480): CGridView->renderTableHeader()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(99): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order?view=about
+HTTP_REFERER=http://yii.ww/admin
+---
+2014/03/13 12:20:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'У вас недостаточно прав для выполнения указанного действия.' in X:\home\yii.ww\www\framework\web\auth\CAccessControlFilter.php:182
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\auth\CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(WebUser), '?? ?????? ?????...')
+#1 X:\home\yii.ww\www\framework\web\filters\CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#6 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/del...')
+#9 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#10 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/admin/order/delete/id/13?ajax=order-grid
+HTTP_REFERER=http://yii.ww/admin/order?view=about
+---
+2014/03/13 12:22:28 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "CActiveDataProvider.pogination".' in X:\home\yii.ww\www\framework\base\CComponent.php:173
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CActiveDataProvider.php(96): CComponent->__set('pogination', false)
+#1 X:\home\yii.ww\www\protected\models\Order.php(149): CActiveDataProvider->__construct(Object(Order), Array)
+#2 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(42): Order->search()
+#3 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#4 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#5 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#6 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#7 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#8 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#9 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#10 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#11 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#12 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#13 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#14 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#15 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#16 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#18 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#19 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#20 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/admin/order?view=about
+HTTP_REFERER=http://yii.ww/admin
+---
+2014/03/13 12:24:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('view')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('view')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/14?models=
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/13 12:26:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "view".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('view')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('view')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/view')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/14?models=
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/13 12:48:21 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\views\order\orderform.php(30): CActiveForm->dropDownList()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#2 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#3 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#4 X:\home\yii.ww\www\protected\views\order\index.php(69): OrderController->renderPartial()
+#5 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#6 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#7 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#8 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#9 X:\home\yii.ww\www\protected\controllers\OrderController.php(47): OrderController->render()
+#10 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#11 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#13 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#15 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\orderform.php (30)
+in X:\home\yii.ww\www\protected\views\order\index.php (69)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (47)
+2014/03/13 15:34:03 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\views\order\orderform.php(30): CActiveForm->dropDownList()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#2 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#3 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#4 X:\home\yii.ww\www\protected\views\order\index.php(69): OrderController->renderPartial()
+#5 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#6 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#7 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#8 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#9 X:\home\yii.ww\www\protected\controllers\OrderController.php(47): OrderController->render()
+#10 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#11 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#12 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#13 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#15 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#16 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#17 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order
+in X:\home\yii.ww\www\protected\views\order\orderform.php (30)
+in X:\home\yii.ww\www\protected\views\order\index.php (69)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (47)
+2014/03/13 18:50:38 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.NovaposhtaWarehouse".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('NovaposhtaWareh...')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('NovaposhtaWareh...')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->Novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/13 18:51:00 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "NovaposhtaWarehouse.name_ru".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name_ru')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('name_ru')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->Novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(4, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(4)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(4)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/13 18:51:54 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.NovaposhtaWarehouse".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('NovaposhtaWareh...')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('NovaposhtaWareh...')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->Novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/13 18:52:20 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.NovaposhtaWarehouse".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('NovaposhtaWareh...')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('NovaposhtaWareh...')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->Novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/13 18:52:49 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "NovaposhtaWarehouse.name_ru".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name_ru')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('name_ru')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(4, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(4)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(4)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/13 18:54:25 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "NovaposhtaWarehouse.name_ru".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name_ru')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('name_ru')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(4, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(4)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(4)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order/ind...')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order/index
+HTTP_REFERER=http://yii.ww/admin/order/view/id/3
+---
+2014/03/14 09:40:28 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "EShoppingCart.getCost".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\OrderController.php(15): CComponent->__get('getCost')
+#1 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#2 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 X:\home\yii.ww\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#7 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/14 11:20:08 [error] [exception.CDbException] exception 'CDbException' with message 'Отношение "manufactyrer" класса Active record "Product" сконфигурировано не верно. Вы должны указать тип отношения, связанный отношением класс active record и внешний ключ.' in X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php:2410
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(2389): CActiveRecordMetaData->addRelation('manufactyrer', Array)
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(411): CActiveRecordMetaData->__construct(Object(Product))
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(1275): CActiveRecord->getMetaData()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(1240): CActiveRecord->getPrimaryKey()
+#4 X:\home\yii.ww\www\protected\extensions\shoppingCart\ECartPositionBehaviour.php(66): CActiveRecord->refresh()
+#5 [internal function]: ECartPositionBehaviour->__wakeup()
+#6 X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php(36): unserialize('a:1:{s:8:"Produ...')
+#7 X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php(29): EShoppingCart->restoreFromSession()
+#8 X:\home\yii.ww\www\framework\base\CModule.php(387): EShoppingCart->init()
+#9 X:\home\yii.ww\www\framework\base\CModule.php(103): CModule->getComponent('shoppingCart')
+#10 X:\home\yii.ww\www\protected\modules\admin\views\layouts\main.php(39): CModule->__get('shoppingCart')
+#11 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#13 X:\home\yii.ww\www\framework\web\widgets\CContentDecorator.php(76): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#14 X:\home\yii.ww\www\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate('?<div class="sp...')
+#15 X:\home\yii.ww\www\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput('?<div class="sp...')
+#16 X:\home\yii.ww\www\framework\web\CBaseController.php(206): COutputProcessor->run()
+#17 X:\home\yii.ww\www\framework\web\CBaseController.php(300): CBaseController->endWidget('CContentDecorat...')
+#18 X:\home\yii.ww\www\protected\modules\admin\views\layouts\column2.php(22): CBaseController->endContent()
+#19 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#21 X:\home\yii.ww\www\framework\web\CController.php(784): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#22 X:\home\yii.ww\www\protected\modules\admin\controllers\ManufacturerController.php(132): CController->render('index', Array)
+#23 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ManufacturerController->actionIndex()
+#24 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#26 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#28 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#29 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#30 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#31 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#32 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#33 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/manufactu...')
+#34 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#35 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#36 {main}
+REQUEST_URI=/admin/manufacturer
+HTTP_REFERER=http://yii.ww/gii/crud/index
+---
+2014/03/14 11:25:07 [error] [php] include(manufactyrer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(182): model()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): Product->__get()
+#8 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CDataColumn->evaluateExpression()
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#13 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#14 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#15 unknown(0): CGridView->renderSection()
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#17 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#18 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CGridView->run()
+#19 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(77): ProductController->widget()
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#21 X:\home\yii.ww\www\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#22 X:\home\yii.ww\www\framework\web\CController.php(869): ProductController->renderFile()
+#23 X:\home\yii.ww\www\framework\web\CController.php(782): ProductController->renderPartial()
+#24 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): ProductController->render()
+#25 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#26 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#27 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#28 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#29 X:\home\yii.ww\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#30 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#31 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#32 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#33 X:\home\yii.ww\www\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): ProductController->run()
+#35 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#36 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#37 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/product?view=about
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (77)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 11:25:32 [error] [php] include(manufactyrer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(182): model()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): Product->__get()
+#8 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CDataColumn->evaluateExpression()
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#13 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#14 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#15 unknown(0): CGridView->renderSection()
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#17 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#18 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CGridView->run()
+#19 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(77): ProductController->widget()
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#21 X:\home\yii.ww\www\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#22 X:\home\yii.ww\www\framework\web\CController.php(869): ProductController->renderFile()
+#23 X:\home\yii.ww\www\framework\web\CController.php(782): ProductController->renderPartial()
+#24 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): ProductController->render()
+#25 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#26 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#27 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#28 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#29 X:\home\yii.ww\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#30 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#31 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#32 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#33 X:\home\yii.ww\www\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): ProductController->run()
+#35 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#36 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#37 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/product
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (77)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 11:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:30:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:31:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:34:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:34:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:35:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:36:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:36:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:36:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:37:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:37:41 [error] [exception.CException] exception 'CException' with message 'Контроллер ManufacturerController не может найти представление "view".' in X:\home\yii.ww\www\framework\web\CController.php:878
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 X:\home\yii.ww\www\protected\modules\admin\controllers\ManufacturerController.php(56): CController->render('view', Array)
+#2 [internal function]: ManufacturerController->actionView('19')
+#3 X:\home\yii.ww\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ManufacturerController), Array)
+#4 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ManufacturerController), Object(ReflectionMethod), Array)
+#5 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#12 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('view')
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/manufactu...')
+#15 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/manufacturer/view/id/19
+HTTP_REFERER=http://yii.ww/admin/manufacturer/create
+---
+2014/03/14 11:39:37 [error] [exception.CException] exception 'CException' with message 'Контроллер ManufacturerController не может найти представление "view".' in X:\home\yii.ww\www\framework\web\CController.php:878
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 X:\home\yii.ww\www\protected\modules\admin\controllers\ManufacturerController.php(56): CController->render('view', Array)
+#2 [internal function]: ManufacturerController->actionView('19')
+#3 X:\home\yii.ww\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ManufacturerController), Array)
+#4 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ManufacturerController), Object(ReflectionMethod), Array)
+#5 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#12 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('view')
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/manufactu...')
+#15 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/manufacturer/view/id/19
+HTTP_REFERER=http://yii.ww/admin/manufacturer/create
+---
+2014/03/14 11:39:45 [error] [exception.CException] exception 'CException' with message 'Контроллер ManufacturerController не может найти представление "view".' in X:\home\yii.ww\www\framework\web\CController.php:878
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#1 X:\home\yii.ww\www\protected\modules\admin\controllers\ManufacturerController.php(56): CController->render('view', Array)
+#2 [internal function]: ManufacturerController->actionView('19')
+#3 X:\home\yii.ww\www\framework\web\actions\CAction.php(108): ReflectionMethod->invokeArgs(Object(ManufacturerController), Array)
+#4 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(ManufacturerController), Object(ReflectionMethod), Array)
+#5 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#7 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#8 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#9 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#10 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#11 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#12 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('view')
+#14 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/manufactu...')
+#15 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#16 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/admin/manufacturer/view/id/19
+HTTP_REFERER=http://yii.ww/admin/manufacturer/create
+---
+2014/03/14 11:39:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:40:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:40:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:40:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:41:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:41:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:41:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:42:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:42:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:42:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "assets/f769dd42/contents.css".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/f769dd42...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/assets/f769dd42/contents.css
+---
+2014/03/14 11:44:43 [error] [php] include(manufactyrer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(182): model()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): Product->__get()
+#8 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CDataColumn->evaluateExpression()
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#13 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#14 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#15 unknown(0): CGridView->renderSection()
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#17 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#18 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CGridView->run()
+#19 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(78): ProductController->widget()
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#21 X:\home\yii.ww\www\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#22 X:\home\yii.ww\www\framework\web\CController.php(869): ProductController->renderFile()
+#23 X:\home\yii.ww\www\framework\web\CController.php(782): ProductController->renderPartial()
+#24 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): ProductController->render()
+#25 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#26 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#27 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#28 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#29 X:\home\yii.ww\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#30 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#31 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#32 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#33 X:\home\yii.ww\www\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): ProductController->run()
+#35 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#36 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#37 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/product/index
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (78)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 11:47:29 [error] [php] include(manufactyrer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(182): model()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): Product->__get()
+#8 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CDataColumn->evaluateExpression()
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#13 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#14 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#15 unknown(0): CGridView->renderSection()
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#17 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#18 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CGridView->run()
+#19 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(78): ProductController->widget()
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#21 X:\home\yii.ww\www\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#22 X:\home\yii.ww\www\framework\web\CController.php(869): ProductController->renderFile()
+#23 X:\home\yii.ww\www\framework\web\CController.php(782): ProductController->renderPartial()
+#24 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): ProductController->render()
+#25 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#26 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#27 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#28 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#29 X:\home\yii.ww\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#30 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#31 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#32 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#33 X:\home\yii.ww\www\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): ProductController->run()
+#35 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#36 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#37 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/product/index
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (78)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 11:57:42 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.category_id' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `category`.`id` AS `t1_c0`, `category`.`title` AS `t1_c1`, `category`.`position` AS `t1_c2` FROM `category` `category`  WHERE (`category`.`category_id`=:ypl0).
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (78)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 11:57:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.category_id' in 'where clause'. The SQL statement executed was: SELECT `category`.`id` AS `t1_c0`, `category`.`title` AS `t1_c1`, `category`.`position` AS `t1_c2` FROM `category` `category`  WHERE (`category`.`category_id`=:ypl0)' in X:\home\yii.ww\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Product))
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Product))
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('category')
+#6 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('category')
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#8 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->category...', Array)
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Product))
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#13 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#14 [internal function]: CBaseListView->renderSection(Array)
+#15 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#17 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#18 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(78): CBaseController->widget('zii.widgets.gri...', Array)
+#19 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#21 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#22 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#23 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): CController->render('index', Array)
+#24 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#25 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#26 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#27 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#28 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#29 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#30 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#31 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#32 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#33 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/product/i...')
+#35 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#36 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#37 {main}
+REQUEST_URI=/admin/product/index
+HTTP_REFERER=http://yii.ww/admin/product/view/id/15
+---
+2014/03/14 11:59:43 [error] [php] include(manufactyrer.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(395): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(182): model()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(230): CActiveFinder->getModel()
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(48): CActiveFinder->buildJoinTree()
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(909): CActiveFinder->__construct()
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(280): Product->getActiveFinder()
+#6 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): Product->getRelated()
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): Product->__get()
+#8 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CDataColumn->evaluateExpression()
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent()
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CDataColumn->renderDataCell()
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow()
+#13 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#14 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#15 unknown(0): CGridView->renderSection()
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback()
+#17 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CGridView->renderContent()
+#18 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CGridView->run()
+#19 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(78): ProductController->widget()
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#21 X:\home\yii.ww\www\framework\web\CBaseController.php(95): ProductController->renderInternal()
+#22 X:\home\yii.ww\www\framework\web\CController.php(869): ProductController->renderFile()
+#23 X:\home\yii.ww\www\framework\web\CController.php(782): ProductController->renderPartial()
+#24 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): ProductController->render()
+#25 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#26 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#27 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): ProductController->runAction()
+#28 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#29 X:\home\yii.ww\www\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#30 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): ProductController->filterAccessControl()
+#31 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#32 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#33 X:\home\yii.ww\www\framework\web\CController.php(265): ProductController->runActionWithFilters()
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): ProductController->run()
+#35 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#36 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#37 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/admin/product/index
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (78)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 12:01:53 [error] [system.db.CDbCommand] Не удалось выполнить CDbCommand::fetchAll(): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.category_id' in 'where clause'. Выполнявшийся SQL-запрос: SELECT `category`.`id` AS `t1_c0`, `category`.`title` AS `t1_c1`, `category`.`position` AS `t1_c2` FROM `category` `category`  WHERE (`category`.`category_id`=:ypl0).
+in X:\home\yii.ww\www\protected\modules\admin\views\product\index.php (78)
+in X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php (133)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 12:01:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand не удалось исполнить SQL-запрос: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'category.category_id' in 'where clause'. The SQL statement executed was: SELECT `category`.`id` AS `t1_c0`, `category`.`title` AS `t1_c1`, `category`.`position` AS `t1_c2` FROM `category` `category`  WHERE (`category`.`category_id`=:ypl0)' in X:\home\yii.ww\www\framework\db\CDbCommand.php:543
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(803): CDbCommand->queryAll()
+#2 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(507): CJoinElement->runQuery(Object(CJoinQuery))
+#3 X:\home\yii.ww\www\framework\db\ar\CActiveFinder.php(163): CJoinElement->lazyFind(Object(Product))
+#4 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(281): CActiveFinder->lazyFind(Object(Product))
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(143): CActiveRecord->getRelated('category')
+#6 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('category')
+#7 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#8 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->category...', Array)
+#9 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Product))
+#10 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#11 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#12 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#13 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#14 [internal function]: CBaseListView->renderSection(Array)
+#15 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#16 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#17 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#18 X:\home\yii.ww\www\protected\modules\admin\views\product\index.php(78): CBaseController->widget('zii.widgets.gri...', Array)
+#19 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#20 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#21 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#22 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#23 X:\home\yii.ww\www\protected\modules\admin\controllers\ProductController.php(133): CController->render('index', Array)
+#24 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): ProductController->actionIndex()
+#25 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#26 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#27 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#28 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#29 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#30 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#31 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#32 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#33 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('index')
+#34 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/product/i...')
+#35 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#36 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#37 {main}
+REQUEST_URI=/admin/product/index
+HTTP_REFERER=http://yii.ww/admin/product/view/id/15
+---
+2014/03/14 13:14:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/id".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/id')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/id/3
+HTTP_REFERER=http://yii.ww/page/index/id/3
+---
+2014/03/14 13:14:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/id".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/id')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/id/2
+HTTP_REFERER=http://yii.ww/product/id/3
+---
+2014/03/14 13:14:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/id/2
+---
+2014/03/14 13:14:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/4
+HTTP_REFERER=http://yii.ww/product/1
+---
+2014/03/14 13:14:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/3
+HTTP_REFERER=http://yii.ww/product/4
+---
+2014/03/14 13:14:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/3
+---
+2014/03/14 13:15:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/3
+---
+2014/03/14 13:15:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/1
+---
+2014/03/14 13:15:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/2
+HTTP_REFERER=http://yii.ww/product/1
+---
+2014/03/14 13:15:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/1
+---
+2014/03/14 13:15:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/3
+HTTP_REFERER=http://yii.ww/product/4
+---
+2014/03/14 13:15:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/4
+HTTP_REFERER=http://yii.ww/product/1
+---
+2014/03/14 13:15:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/view".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/view')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/1
+HTTP_REFERER=http://yii.ww/product/id/2
+---
+2014/03/14 13:15:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/id".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/id')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/id/2
+HTTP_REFERER=http://yii.ww/product/id/3
+---
+2014/03/14 13:15:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/id".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/id')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/id/2
+HTTP_REFERER=http://yii.ww/product/id/3
+---
+2014/03/14 13:15:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/id".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/id')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/id/2
+HTTP_REFERER=http://yii.ww/
+---
+2014/03/14 13:16:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/index/id/3".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index/i...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/index/id/3
+HTTP_REFERER=http://yii.ww/page/index/id/3
+---
+2014/03/14 13:16:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/index/id/3".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index/i...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/index/id/3
+HTTP_REFERER=http://yii.ww/page/index/id/3
+---
+2014/03/14 14:10:43 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.novaposhtacities".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('novaposhtacitie...')
+#1 X:\home\yii.ww\www\framework\base\CComponent.php(612) : eval()'d code(1): CActiveRecord->__get('novaposhtacitie...')
+#2 X:\home\yii.ww\www\framework\base\CComponent.php(612): eval()
+#3 X:\home\yii.ww\www\framework\zii\widgets\grid\CDataColumn.php(137): CComponent->evaluateExpression('$data->novaposh...', Array)
+#4 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridColumn.php(151): CDataColumn->renderDataCellContent(0, Object(Order))
+#5 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(616): CGridColumn->renderDataCell(0)
+#6 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(572): CGridView->renderTableRow(0)
+#7 X:\home\yii.ww\www\framework\zii\widgets\grid\CGridView.php(482): CGridView->renderTableBody()
+#8 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(167): CGridView->renderItems()
+#9 [internal function]: CBaseListView->renderSection(Array)
+#10 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(150): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#11 X:\home\yii.ww\www\framework\zii\widgets\CBaseListView.php(135): CBaseListView->renderContent()
+#12 X:\home\yii.ww\www\framework\web\CBaseController.php(173): CBaseListView->run()
+#13 X:\home\yii.ww\www\protected\modules\admin\views\order\index.php(94): CBaseController->widget('zii.widgets.gri...', Array)
+#14 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require('X:\home\yii.ww\...')
+#15 X:\home\yii.ww\www\framework\web\CBaseController.php(95): CBaseController->renderInternal('X:\home\yii.ww\...', Array, true)
+#16 X:\home\yii.ww\www\framework\web\CController.php(869): CBaseController->renderFile('X:\home\yii.ww\...', Array, true)
+#17 X:\home\yii.ww\www\framework\web\CController.php(782): CController->renderPartial('index', Array, true)
+#18 X:\home\yii.ww\www\protected\modules\admin\controllers\OrderController.php(136): CController->render('index', Array)
+#19 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#20 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#21 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#22 X:\home\yii.ww\www\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#23 X:\home\yii.ww\www\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#24 X:\home\yii.ww\www\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#25 X:\home\yii.ww\www\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#26 X:\home\yii.ww\www\framework\web\CController.php(291): CFilterChain->run()
+#27 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#28 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#29 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/order')
+#30 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#31 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#32 {main}
+REQUEST_URI=/admin/order?view=about
+HTTP_REFERER=http://yii.ww/admin/manufacturer/
+---
+2014/03/14 16:14:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/14 17:26:30 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:33 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:35 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:37 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:39 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:40 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:42 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:43 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:46 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:49 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/14 17:26:51 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
+in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
+in X:\home\yii.ww\www\index.php (13)

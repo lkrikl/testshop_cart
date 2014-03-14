@@ -2,11 +2,16 @@
 <?php $this->beginContent('//layouts/main'); ?>
 
 <div class="span-5 last">
-	<div id="sidebar"><div id="mainmenu1">
-		<?php $this->widget('zii.widgets.CMenu',array(
-			 'items'=>  Category::menu('top'),
-		)); ?>
-        </div><!-- mainmenu -->
+	<div id="sidebar">
+            
+            
+            
+            
+            
+            
+            
+            
+            
 	<?php
 		$this->beginWidget('zii.widgets.CPortlet', array(
 			'title'=>'Operations',

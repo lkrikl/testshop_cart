@@ -6,32 +6,21 @@ $(document).ready(function () {
         function () {
             $('#block-cart > div').hide();
         }
+       
     );
     
     $('#choice_of_delivery').click(function() {
         if ($(this).is(':checked')) {
             $("#new_mail_delivery").show();
-            $("#Order_type_of_delivery").val("Новая Почта"); 
-            $("#Order_user_address").val("Доставка Новой Почтой в ближайшее отделение");
         }
          else {
             $("#new_mail_delivery").hide();
-            $("#Order_type_of_delivery").val("");
-            $("#Order_settlement_delivery").val("");
-            $("#Order_delivery_address").val("");
-            $('#drop').val("");
-            $('#warehouses').val("");
-            $('#Order_user_address').val("");
         }
     });
-    
-    $('#drop').change(function() {
-        city_id = $(this).val();
-        $("#Order_settlement_delivery").val(city_id);
-    });
-    
+
     $('#drop').change(function() {
         $('#loader').show();
+        // @todo show loader.
         city_id = $(this).val();
         $.ajax({
             type: "POST",
@@ -40,15 +29,10 @@ $(document).ready(function () {
             data: {"city_id": city_id},
             success: function (data) {
                 $('#loader').hide();
+                // @todo hide loader.
                 var container = $('#warehouseContainer');
                 container.text('');
                 container.append(data);
-                $('#warehouses').change(function() {
-                address = $(this).val();
-                console.log(address);
-                $("#Order_delivery_address").val(address);
-            });
-
             }
 
         });
@@ -59,8 +43,7 @@ $(document).ready(function () {
         //cart_products_count++;
 
         $('#block-cart span.count').html(cart_products_count);
-        $("#message_cart").html("Добавляю.................").show();
-        //setTimeout('$("#message_cart").hide();', 1600);
+        
         $(".messagecart").html("Добавляю...").show();
 
         $.ajax({
@@ -75,10 +58,6 @@ $(document).ready(function () {
                     $('#block-cart span.count').text(data.count);
                     $(".messagecart").html("Добавлено в корзину!");
                     setTimeout('$(".messagecart").hide();', 1600);
-                    
-                    $("#message_cart").html("Добавлено в корзину!").show();
-                    setTimeout('$("#message_cart").hide();', 2600);
-                    
                 }
             }
 

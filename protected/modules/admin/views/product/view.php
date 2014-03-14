@@ -9,9 +9,9 @@ $this->breadcrumbs=array(
 
 $this->menu=array(
 	array('label'=>'Журнал товаров', 'url'=>array('index')),
-	array('label'=>'Create Product', 'url'=>array('create')),
-	array('label'=>'Update Product', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Product', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Удалить?')),
+	array('label'=>'Добавить товар', 'url'=>array('create')),
+	array('label'=>'Редактировать товар', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить товар', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Удалить?')),
 	
 );
 ?>
