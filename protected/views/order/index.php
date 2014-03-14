@@ -57,6 +57,9 @@ $this->breadcrumbs = array(
     <table>
         <tr>
             <td>
+                
+            </td>
+            <td>
                 Фото
             </td>
             <td>
@@ -68,9 +71,13 @@ $this->breadcrumbs = array(
             <td>
                 Цена
             </td>
+            
         </tr>
         <?php foreach (Yii::app()->shoppingCart as $one): ?>
             <tr>
+                <td>
+                    <div id="remove_position"data-id="<?php echo $one->id; ?>"></div>
+                </td>
                 <td>
                     <?php echo $one->image; ?>
                 </td>
@@ -85,6 +92,7 @@ $this->breadcrumbs = array(
                     <?php $price = $one->getSumPrice();
                     echo $price . '<br>'; ?>
                 </td>
+                
             </tr>
         <?php endforeach; ?>
     </table>

@@ -28,31 +28,10 @@ class CartController extends Controller
         Yii::app()->shoppingCart->clear();
         Yii::app()->end();
     }
-    public function actionAdd() {
-        
-//        $product = new Orderproduct;
-//        $product->total_product = Yii::app()->shoppingCart->getItemsCount();
-//        $product->total_price = Yii::app()->shoppingCart->getCost();
-//        $order_id = Order::model()->count();
-//        $product->order_id = $order_id;
-//        $product->save(false);
-//        
-//        
-//            foreach(Yii::app()->shoppingCart->getPositions() as $one) {
-//
-//                $product = new Orderproduct;
-//                $product->product_id = $one->id.'<br>';
-//                $order_id = Order::model()->count();
-//                $product->order_id = $order_id;
-//                $product->name = $one->name;
-//                $product->image = $one->image;
-//                $product->quantity = $one->getQuantity();
-//                $product->price = $one->getSumPrice();
-//                $product->save(false);
-//             }
-//             
-//        Yii::app()->shoppingCart->clear();
-//        Yii::app()->end();
-         
+    public function actionRemoveposition() {
+
+        $remove_position = Product::model()->findByPk($_POST['remove_id']);
+        Yii::app()->shoppingCart->remove($remove_position->getId());
+        Yii::app()->end();
     }
 }

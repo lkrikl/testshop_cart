@@ -53,6 +53,20 @@ $(document).ready(function () {
 
         });
     });
+    $('#remove_position').click(function () {
+        var remove_id = $(this).data("id");
+        $.ajax({
+            type: "POST",
+            url: "/cart/removeposition",
+            dataType: "html",
+            data: {"remove_id": remove_id},
+            success: function (data) {
+                $("#message_cart").html("Позиция удалена!").show();
+                    setTimeout('$("#message_cart").hide();', 2600);
+            }
+        });
+    });
+
 
     $('.add-product').click(function () {
         var product_id = $(this).data("id");

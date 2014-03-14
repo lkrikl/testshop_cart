@@ -136,6 +136,22 @@ p.add-product {
 p.add-product:active {
     background: url(/images/button_buy_now.jpg) no-repeat;
 }
+#remove_position {
+    background: url(/images/delete_product.png) no-repeat;
+    display: inline-block;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+#remove_position:hover {
+    background: url(/images/active_delete_product.png) no-repeat;
+    display: inline-block;
+    margin: 0;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
 .clear_scart{
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
@@ -237,6 +253,7 @@ a {
 	margin:0px;
         position: absolute;
         top: -7px;
+
         
         
 }
