@@ -5,6 +5,7 @@ $this->breadcrumbs = array(
     'Оформление товара',
 );
 ?>
+<div id="Container_order">
 <?php if (Yii::app()->user->hasFlash('contact')): ?>
 
     <div class="flash-success">
@@ -51,9 +52,9 @@ $this->breadcrumbs = array(
     </div>
 
 <?php else: ?>
-
+    <div id="registration_order">
     <h1>Оформление товара</h1>
-
+    <?php if (!Yii::app()->shoppingCart->isEmpty(1)) : ?>
     <table>
         <tr>
             <td>
@@ -85,8 +86,12 @@ $this->breadcrumbs = array(
                     <?php echo $one->name; ?>
                 </td>
                 <td>
-                    <?php $price = $one->getQuantity();
-                    echo $price . '  '; ?>
+                    <?php echo CHtml::numberField('count_product_field', $one->getQuantity(), array(
+                        'id'=>'count_product',
+                        'data-id'=>$one->id,
+                        'min'=>1,
+                        'max'=>100
+                    )) ?>
                 </td>
                 <td>
                     <?php $price = $one->getSumPrice();
@@ -96,16 +101,15 @@ $this->breadcrumbs = array(
             </tr>
         <?php endforeach; ?>
     </table>
-    <b><p align="right">
-            <?php
-            echo 'Всего товаров  - ' . Yii::app()->shoppingCart->getItemsCount() . '<br>';
-            //   echo $q.'<br>';
-            // Сумма всех товаров
-            echo 'Общая сумма - ' . Yii::app()->shoppingCart->getCost(); //400
-            echo '<br>';
-            ?>
-        </p></b>
+   
+    <b><p align="right"><?php echo CHtml::submitButton('Пересчитать', array('id' => 'recalculate', )); ?>
+            
+            Всего товаров  -  <class id="count"><?php echo Yii::app()->shoppingCart->getItemsCount(); ?></class><br>
+            Общая сумма - <class id="total_price"><?php echo Yii::app()->shoppingCart->getCost(); ?></class>
+    <?php endif; ?> 
+    </p></b>
     <hr>
+    </div>
     <?php if (Yii::app()->shoppingCart->isEmpty(1)) : ?>
 
         <h4>Товаров для заказа нет</h4>
@@ -128,6 +132,5 @@ $this->breadcrumbs = array(
            
     <?php endif; ?>
 <?php endif; ?>
-
-        
+</div>
         

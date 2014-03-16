@@ -101,11 +101,14 @@ class Manufacturer extends CActiveRecord
         {                         
             return CHtml::listData(self::model()->findAll(array('order' => 'url')),'id','url');
         }
-        public static function menu($position){
+        public static function menu($view){
             
-            $models = self::model()->findAllByAttributes(array('position' => $position));
-            
+            $models = self::model()->findAllByAttributes(array('view' => $view));
             $array = array();
+            foreach ($models as $one) {
+                $array[] = array('label'=>$one->url, 'url' => array('/product/index/id/'.$one->id));
+            }
             return $array;
+            
         }    
 }

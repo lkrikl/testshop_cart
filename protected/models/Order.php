@@ -44,8 +44,10 @@ class Order extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('user_name, user_address, user_phone', 'required'),
+			array('user_name', 'required'),
                         array('user_email', 'email'),
+                        array('user_phone','numerical','integerOnly'=>true),
+                        array('user_phone','length','min'=>10),
 			array('user_id, delivery_id, status_id, paid, created, updated', 'numerical', 'integerOnly'=>true),
 			array('delivery_price, total_price', 'numerical'),
 			array('secret_key', 'length', 'max'=>10),
@@ -61,7 +63,8 @@ class Order extends CActiveRecord
 			array('id, user_id, secret_key, delivery_id, settlement_delivery, delivery_address, type_of_delivery, delivery_price, total_price, status_id, paid, user_name, user_email, user_address, user_phone, user_comment, ip_address, created, updated, discount, admin_comment', 'safe', 'on'=>'search'),
 		);
 	}
-
+        
+       
 	/**
 	 * @return array relational rules.
 	 */

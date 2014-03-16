@@ -646,5 +646,14 @@ div.search-form
     top: 92%; /* Расстояние сверху */
     padding: 15px; /* Поля вокруг текста */ 
     display: none;
+    border-radius: 5px;
     
+}
+#count_product {
+    width: 50px;
+    border-radius: 5px;
+}
+#recalculate {
+    margin-right: 25px;
+   
 }

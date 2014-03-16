@@ -33,22 +33,6 @@
         <div id="nadfooter">
             <!--img src="/images/logo_axioma.png"-->
                
-               
-            
-                             <div id="block-cart">
-                                <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
-                                    
-                                    <div>
-                                        
-                                        <p>Товаров: <span class="count"> <?php echo Yii::app()->shoppingCart->getItemsCount();?></span></p>
-                                        <p>На сумму: <span data-price="0" id="price">
-                                            <?php echo Yii::app()->shoppingCart->getCost();?>
-                                            </span>
-                                        </p>
-                                        <a href="">Оформить</a>
-
-                                    </div>
-                             </div>
         </div>
         <!-- mainmenu -->
 	<div id="mainmenu">
@@ -58,8 +42,7 @@
 				array('label'=>'Заказы', 'url'=>array('/admin/order', 'view'=>'about')),
                                 array('label'=>'Категории', 'url'=>array('/admin/category', 'view'=>'about')),
                                 array('label'=>'Товары', 'url'=>array('/admin/product', 'view'=>'about')),
-                                
-				array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
+                                array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),
 		)); ?>

@@ -48,11 +48,10 @@ $(document).ready(function () {
                 console.log(address);
                 $("#Order_delivery_address").val(address);
             });
-
             }
-
         });
     });
+    
     $('#remove_position').click(function () {
         var remove_id = $(this).data("id");
         $.ajax({
@@ -66,18 +65,32 @@ $(document).ready(function () {
             }
         });
     });
-
+    
+    $('#recalculate').click(function () {
+        var recalculate_id = $('#count_product').data("id");
+        var recalculate_value = $('#count_product').val();
+            $.ajax({
+            type: "POST",
+            url: "/cart/recalculate",
+            dataType: "html",
+            data: {"recalculate_id": recalculate_id, "recalculate_value": recalculate_value},
+            success: function (data) {
+                data = $.parseJSON(data);
+                if (data.status) {
+                     $('#total_price').text(data.total);
+                     $('#count').text(data.count);
+                     $('#price').text(data.total);
+                     $('#block-cart span.count').text(data.count);                  
+                }
+            }
+       });
+    });
 
     $('.add-product').click(function () {
         var product_id = $(this).data("id");
-        //cart_products_count++;
-
-        $('#block-cart span.count').html(cart_products_count);
         $("#message_cart").html("Добавляю.................").show();
-        //setTimeout('$("#message_cart").hide();', 1600);
         $(".messagecart").html("Добавляю...").show();
-
-        $.ajax({
+            $.ajax({
             type: "POST",
             url: "/cart",
             dataType: "html",
@@ -89,13 +102,10 @@ $(document).ready(function () {
                     $('#block-cart span.count').text(data.count);
                     $(".messagecart").html("Добавлено в корзину!");
                     setTimeout('$(".messagecart").hide();', 1600);
-                    
                     $("#message_cart").html("Добавлено в корзину!").show();
                     setTimeout('$("#message_cart").hide();', 2600);
-                    
                 }
             }
-
         });
     });
 });

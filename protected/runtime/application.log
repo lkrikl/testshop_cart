@@ -14534,3 +14534,553 @@ in X:\home\yii.ww\www\index.php (13)
 2014/03/14 17:26:51 [warning] [application] Не удалось присвоить небезопасный атрибут "verifyCode" класса "RegistrationForm".
 in X:\home\yii.ww\www\protected\modules\user\controllers\RegistrationController.php (30)
 in X:\home\yii.ww\www\index.php (13)
+2014/03/15 10:02:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/15 14:22:25 [error] [exception.CException] exception 'CException' with message 'В классе CartController и его поведениях не найден метод или замыкание с именем "rebder".' in X:\home\yii.ww\www\framework\base\CComponent.php:266
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\CartController.php(38): CComponent->__call('rebder', Array)
+#1 X:\home\yii.ww\www\protected\controllers\CartController.php(38): CartController->rebder('recalculate')
+#2 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): CartController->actionRecalculate()
+#3 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 X:\home\yii.ww\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('recalculate')
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('cart/recalculat...')
+#8 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cart/recalculate
+---
+2014/03/15 14:22:26 [error] [exception.CException] exception 'CException' with message 'В классе CartController и его поведениях не найден метод или замыкание с именем "rebder".' in X:\home\yii.ww\www\framework\base\CComponent.php:266
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\CartController.php(38): CComponent->__call('rebder', Array)
+#1 X:\home\yii.ww\www\protected\controllers\CartController.php(38): CartController->rebder('recalculate')
+#2 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): CartController->actionRecalculate()
+#3 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 X:\home\yii.ww\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('recalculate')
+#7 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('cart/recalculat...')
+#8 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#9 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/cart/recalculate
+HTTP_REFERER=http://yii.ww/cart/recalculate
+---
+2014/03/15 14:49:27 [error] [php] include(Book.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\CartController.php(41): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): CartController->actionRecalculate()
+#2 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#4 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#5 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\controllers\CartController.php (41)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 14:49:32 [error] [php] include(Book.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\CartController.php(41): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): CartController->actionRecalculate()
+#2 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#4 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#5 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\controllers\CartController.php (41)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 14:49:38 [error] [php] include(Book.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (X:\home\yii.ww\www\framework\YiiBase.php:427)
+Stack trace:
+#0 X:\home\yii.ww\www\protected\controllers\CartController.php(41): spl_autoload_call()
+#1 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): CartController->actionRecalculate()
+#2 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#4 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#5 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#6 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#8 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\controllers\CartController.php (41)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 18:26:11 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 18:26:21 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 18:45:53 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 18:46:08 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 21:11:52 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/15 21:11:56 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 09:21:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/16 12:04:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reload_order.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:04:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reload_order.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:04:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reload_order.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:10:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reload_order.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:10:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reload_order.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:18:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:19:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reload_order.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reload_order.ph...')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reload_order.ph...')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reload_or...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reload_order.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:21:32 [error] [php] Invalid argument supplied for foreach() (X:\home\yii.ww\www\framework\web\helpers\CHtml.php:2325)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CBaseController.php(126): require()
+#1 X:\home\yii.ww\www\framework\web\CBaseController.php(95): OrderController->renderInternal()
+#2 X:\home\yii.ww\www\framework\web\CController.php(869): OrderController->renderFile()
+#3 X:\home\yii.ww\www\framework\web\CController.php(782): OrderController->renderPartial()
+#4 X:\home\yii.ww\www\protected\controllers\OrderController.php(53): OrderController->render()
+#5 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionReloadorder()
+#6 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#7 X:\home\yii.ww\www\framework\web\CController.php(286): OrderController->runAction()
+#8 X:\home\yii.ww\www\framework\web\CController.php(265): OrderController->runActionWithFilters()
+#9 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): OrderController->run()
+#10 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#11 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#12 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/order/reloadorder
+in X:\home\yii.ww\www\protected\views\order\reloadorder.php (113)
+in X:\home\yii.ww\www\protected\controllers\OrderController.php (53)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 12:22:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reloadorder.php')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reloadord...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:25:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reloadorder.php')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reloadord...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reloadorder.php')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reloadord...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:35:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:35:35 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 12:36:02 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 12:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:36:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reloadorder.php')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reloadord...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:36:22 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 12:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Системе не удалось найти запрашиваемое действие "reloadorder.php".' in X:\home\yii.ww\www\framework\web\CController.php:483
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(270): CController->missingAction('reloadorder.php')
+#1 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('reloadorder.php')
+#2 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order/reloadord...')
+#3 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#4 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 12:59:20 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 13:02:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ajax/order/reloadorder.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/order/relo...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ajax/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 13:03:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ajax/order/reloadordeqr.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/order/relo...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ajax/order/reloadordeqr.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 13:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "ajax/order/reloadorder.php".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('ajax/order/relo...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/ajax/order/reloadorder.php
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 13:18:02 [error] [php] Argument 1 passed to EShoppingCart::update() must implement interface IECartPosition, null given, called in X:\home\yii.ww\www\protected\controllers\CartController.php on line 43 and defined (X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php:94)
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 X:\home\yii.ww\www\framework\web\CController.php(286): CartController->runAction()
+#2 X:\home\yii.ww\www\framework\web\CController.php(265): CartController->runActionWithFilters()
+#3 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CartController->run()
+#4 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#6 X:\home\yii.ww\www\index.php(13): CWebApplication->run()
+REQUEST_URI=/cart/recalculate
+in X:\home\yii.ww\www\protected\extensions\shoppingCart\EShoppingCart.php (94)
+in X:\home\yii.ww\www\protected\controllers\CartController.php (43)
+in X:\home\yii.ww\www\index.php (13)
+2014/03/16 13:36:17 [error] [exception.CException] exception 'CException' with message 'Не определено свойство "Order.phone".' in X:\home\yii.ww\www\framework\base\CComponent.php:130
+Stack trace:
+#0 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(145): CComponent->__get('phone')
+#1 X:\home\yii.ww\www\protected\models\Order.php(69): CActiveRecord->__get('phone')
+#2 X:\home\yii.ww\www\framework\validators\CInlineValidator.php(42): Order->phoneValid('user_phone', Array)
+#3 X:\home\yii.ww\www\framework\validators\CValidator.php(213): CInlineValidator->validateAttribute(Object(Order), 'user_phone')
+#4 X:\home\yii.ww\www\framework\base\CModel.php(159): CValidator->validate(Object(Order), NULL)
+#5 X:\home\yii.ww\www\framework\db\ar\CActiveRecord.php(805): CModel->validate(NULL)
+#6 X:\home\yii.ww\www\protected\controllers\OrderController.php(11): CActiveRecord->save()
+#7 X:\home\yii.ww\www\framework\web\actions\CInlineAction.php(49): OrderController->actionIndex()
+#8 X:\home\yii.ww\www\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#9 X:\home\yii.ww\www\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#10 X:\home\yii.ww\www\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 X:\home\yii.ww\www\framework\web\CWebApplication.php(282): CController->run('')
+#12 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('order')
+#13 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#14 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/order
+HTTP_REFERER=http://yii.ww/order
+---
+2014/03/16 14:13:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/16 14:13:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "favicon.ico".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2014/03/16 17:13:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/index/id/11".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index/i...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/index/id/11
+HTTP_REFERER=http://yii.ww/page/index/id/1
+---
+2014/03/16 17:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Невозможно обработать запрос "product/index/id/5".' in X:\home\yii.ww\www\framework\web\CWebApplication.php:286
+Stack trace:
+#0 X:\home\yii.ww\www\framework\web\CWebApplication.php(141): CWebApplication->runController('product/index/i...')
+#1 X:\home\yii.ww\www\framework\base\CApplication.php(180): CWebApplication->processRequest()
+#2 X:\home\yii.ww\www\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/product/index/id/5
+HTTP_REFERER=http://yii.ww/page/index/id/1
+---

@@ -49,6 +49,9 @@ class OrderController extends Controller
             'total_price' => $total_price,
             ));
     }
+    public function actionReloadorder() {
+        $this->render('reloadorder');
+    }
 
 
 }
