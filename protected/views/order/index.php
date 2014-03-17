@@ -77,7 +77,7 @@ $this->breadcrumbs = array(
         <?php foreach (Yii::app()->shoppingCart as $one): ?>
             <tr>
                 <td>
-                    <div id="remove_position"data-id="<?php echo $one->id; ?>"></div>
+                    <div class="remove_position"data-id="<?php echo $one->id; ?>"></div>
                 </td>
                 <td>
                     <?php echo $one->image; ?>
@@ -87,7 +87,7 @@ $this->breadcrumbs = array(
                 </td>
                 <td>
                     <?php echo CHtml::numberField('count_product_field', $one->getQuantity(), array(
-                        'id'=>'count_product',
+                        'class'=>'count_product',
                         'data-id'=>$one->id,
                         'min'=>1,
                         'max'=>100

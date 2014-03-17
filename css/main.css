@@ -156,7 +156,7 @@ p.add-product:active {
 
 
 
-#remove_position {
+.remove_position {
     background: url(/images/delete_product.png) no-repeat;
     display: inline-block;
     margin: 0;
@@ -164,7 +164,7 @@ p.add-product:active {
     height: 15px;
     cursor: pointer;
 }
-#remove_position:hover {
+.remove_position:hover {
     background: url(/images/active_delete_product.png) no-repeat;
     display: inline-block;
     margin: 0;

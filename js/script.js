@@ -29,18 +29,11 @@ $(document).ready(function () {
     $( "#block-cart" ).focus(function() {
     alert( "Handler for .focus() called." );
     });
-    
-    
-    
-    
-    $('#drop').change(function() {
-        city_id = $(this).val();
-        $("#Order_settlement_delivery").val(city_id);
-    });
-    
+   
     $('#drop').change(function() {
         $('#loader').show();
         city_id = $(this).val();
+        $("#Order_settlement_delivery").val(city_id);
         $.ajax({
             type: "POST",
             url: "/novaposhta/warehouse",
@@ -53,14 +46,13 @@ $(document).ready(function () {
                 container.append(data);
                 $('#warehouses').change(function() {
                 address = $(this).val();
-                console.log(address);
                 $("#Order_delivery_address").val(address);
             });
             }
         });
     });
     
-    $('#remove_position').click(function () {
+    $('.remove_position').click(function () {
         var remove_id = $(this).data("id");
         $.ajax({
             type: "POST",
@@ -75,8 +67,8 @@ $(document).ready(function () {
     });
     
     $('#recalculate').click(function () {
-        var recalculate_id = $('#count_product').data("id");
-        var recalculate_value = $('#count_product').val();
+        var recalculate_id = $('.count_product').data("id");
+        var recalculate_value = $('.count_product').val();
             $.ajax({
             type: "POST",
             url: "/cart/recalculate",

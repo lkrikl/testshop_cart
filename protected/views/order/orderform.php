@@ -21,19 +21,19 @@
 
     <div class="row">
         <?php// echo $form->labelEx($model,'settlement_delivery'); ?>
-        <?php echo $form->hiddenField($model,'settlement_delivery',array('size'=>60,'maxlength'=>100)); ?>
+        <?php echo $form->textField($model,'settlement_delivery',array('size'=>60,'maxlength'=>100)); ?>
         <?php echo $form->error($model,'settlement_delivery'); ?>
     </div>
 
     <div class="row">
         <?php// echo $form->labelEx($model,'delivery_address'); ?>
-        <?php echo $form->hiddenField($model,'delivery_address', array('size'=>60,'maxlength'=>100)); ?>
+        <?php echo $form->textField($model,'delivery_address', array('size'=>60,'maxlength'=>100)); ?>
         <?php echo $form->error($model,'delivery_address'); ?>
     </div>
     
     <div class="row">
         <?php// echo $form->labelEx($model,'type_of_delivery'); ?>
-        <?php echo $form->hiddenField($model,'type_of_delivery',array('size'=>25,'maxlength'=>25)); ?>
+        <?php echo $form->textField($model,'type_of_delivery',array('size'=>25,'maxlength'=>25)); ?>
         <?php echo $form->error($model,'type_of_delivery'); ?>
     </div>
 
