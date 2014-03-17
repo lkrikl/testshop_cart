@@ -17,7 +17,9 @@ $this->pageTitle = Yii::app()->name;
         <br />
         <?php echo $one->price; ?><br />
         <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
+         <div id="description"><?php echo substr($one->description,0,300); ?>...</div>
     </div>
+    
     <?php endforeach; ?>
     <?php if (!$product)    echo 'В данной категории товаров нет.'; ?>
 </div>

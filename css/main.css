@@ -1,4 +1,4 @@
-body
+descriptionbody
 {
 	margin: 0;
 	padding: 0;
@@ -47,8 +47,6 @@ body
 {
     padding: 20px;
 }
-
-
 
 
 
@@ -106,14 +104,16 @@ body
 .product_block {
     padding: 10px;
     margin: 10px;
-    width:  187px;
+    width:  185px;
     height: 250px;
     alignment-adjust: central;
     background: #F3F2F2;
     float: left;
     border-style: solid; 
     text-align: center;
+    border: 1px solid #C9E0ED;
 }
+
 .product_block p.add-product {
     background: url(/images/button_buy_now.gif) no-repeat;
     display: inline-block;
@@ -136,6 +136,26 @@ p.add-product {
 p.add-product:active {
     background: url(/images/button_buy_now.jpg) no-repeat;
 }
+#description{
+  //  position: absolute;
+  //  left: 9999px;
+  border: 1px solid #C9E0ED;
+  padding: 15px;
+  position: relative;
+  left: 99999px;
+  z-index: 99999;
+  margin: -11px;
+  background: #F3F2F2;
+  
+    
+}
+.product_block:hover #description{ /* Выводим выпадающий пункт при наведении курсора */
+    left:0; /* Приносим его обратно на экран, когда нужно */
+    opacity:1; /* Делаем непрозрачным */
+}
+
+
+
 #remove_position {
     background: url(/images/delete_product.png) no-repeat;
     display: inline-block;

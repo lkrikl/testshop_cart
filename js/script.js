@@ -25,6 +25,14 @@ $(document).ready(function () {
         }
     });
     
+    
+    $( "#block-cart" ).focus(function() {
+    alert( "Handler for .focus() called." );
+    });
+    
+    
+    
+    
     $('#drop').change(function() {
         city_id = $(this).val();
         $("#Order_settlement_delivery").val(city_id);

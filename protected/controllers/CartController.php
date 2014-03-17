@@ -34,16 +34,13 @@ class CartController extends Controller
         Yii::app()->shoppingCart->remove($remove_position->getId());
         Yii::app()->end();
     }
-    public function actionRecalculate() {
-        
-        
+    public function actionRecalculate() {       
         
         $product = Product::model()->findByPk($_POST['recalculate_id']);
         //Yii::app()->shoppingCart->put($book); //в корзине 1 позиция с id=1 в количестве 1 единица.
         Yii::app()->shoppingCart->update($product,$_POST['recalculate_value']); //в корзине 1 позиция с id=1 в количестве 2 единицы.
-       // Yii::app()->end();
-        if ($product) {
-         //       Yii::app()->shoppingCart [] = $product;
+       
+            if ($product) {         
                 $response = array(
                     'count' => Yii::app()->shoppingCart->getItemsCount(),
                     'status' => TRUE,

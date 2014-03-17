@@ -13,7 +13,9 @@ $this->breadcrumbs=array(
         <br />
         <?php echo $one->price; ?><br />
         <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
+        <div id="description"><?php echo substr($one->description,0,300); ?></div>
     </div>
+    
     <?php endforeach; ?>
     <?php if (!$models)    echo 'В данной категории товаров нет.'; ?>
 </div>
