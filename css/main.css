@@ -1,12 +1,3 @@
-descriptionbody
-{
-	margin: 0;
-	padding: 0;
-	color: #555;
-	font: normal 10pt Arial,Helvetica,sans-serif;
-	background: white;
-}
-
 #page
 {
 	margin-top: 5px;
@@ -20,6 +11,11 @@ descriptionbody
 	margin: 0;
 	padding: 0;
 	border-top: 3px solid #C9E0ED;
+}
+#looking{
+    position: relative;
+    left: 55px;
+    top: -20px;
 }
 #header img {
     position: absolute;
@@ -136,10 +132,18 @@ p.add-product {
 p.add-product:active {
     background: url(/images/button_buy_now.jpg) no-repeat;
 }
+.image_product{
+    height: 180px;
+}
+.image_product_list{
+    width: 200px;
+}
 #description{
   //  position: absolute;
   //  left: 9999px;
-  border: 1px solid #C9E0ED;
+  border-bottom: 1px solid #C9E0ED;
+  border-left: 1px solid #C9E0ED;
+  border-right: 1px solid #C9E0ED;
   padding: 15px;
   position: relative;
   left: 99999px;
@@ -149,12 +153,36 @@ p.add-product:active {
   
     
 }
+.product_block:hover {
+-moz-box-shadow: 1px 0px 38px #000000;
+-webkit-box-shadow: 1px 0px 38px #000000;
+box-shadow: 1px 0px 38px #000000;
+border-radius: 7px;
+}
 .product_block:hover #description{ /* Выводим выпадающий пункт при наведении курсора */
     left:0; /* Приносим его обратно на экран, когда нужно */
     opacity:1; /* Делаем непрозрачным */
+    -moz-box-shadow: 3px 11px 29px #000000;
+    -webkit-box-shadow: 3px 11px 29px #000000;
+    box-shadow: 3px 11px 29px #000000;
+    border-radius: 7px;   
 }
-
-
+#product_list{
+    width: 100%;
+    height: 175px;
+    border: 1px solid #C9E0ED;
+    margin: 15px;
+    
+}
+#product_list a img{
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;   
+}
+#product_block_list {
+    display: none;
+}
 
 .remove_position {
     background: url(/images/delete_product.png) no-repeat;
@@ -185,11 +213,27 @@ p.add-product:active {
 	padding: 20px 20px 20px 0;
                 
 }
+#view_item{ 
+    margin: 20px;
+    border-top: 5px solid yellowgreen;
+}
+#view_item p{
+    font-size: 1.8em;
+    margin: 0;
+}
+
 #nadfooter{
-    
     padding-top: 20px;
+    
     border-top: 5px solid yellowgreen;
    
+}
+#nadfooter > b{
+    font-size: 1.2em;
+    color: rgba(215, 30, 14, 0.9);
+    position: relative;
+    left: 127px;
+    top: 15px;
 }
 #footer
 {
@@ -676,4 +720,25 @@ div.search-form
 #recalculate {
     margin-right: 25px;
    
+}
+#tabs li{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #C9E0ED;
+}
+#tabs li:hover{
+    cursor: pointer;
+    background: yellowgreen;
+}
+#characteristics{
+    padding-top: 20px;
+ //   display: none;
+}
+#photo_product{
+     padding-top: 20px;
+     display: none;
+}
+#reviews{
+     padding-top: 20px;
+     display: none;
 }

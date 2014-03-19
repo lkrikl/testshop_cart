@@ -1,20 +1,22 @@
 <?php
 
 /**
- * This is the model class for table "{{test}}".
+ * This is the model class for table "reviews".
  *
- * The followings are the available columns in table '{{test}}':
+ * The followings are the available columns in table 'reviews':
  * @property integer $id
- * @property string $text
+ * @property integer $product_id
+ * @property string $user_name
+ * @property string $message
  */
-class Test extends CActiveRecord
+class Reviews extends CActiveRecord
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return '{{test}}';
+		return 'reviews';
 	}
 
 	/**
@@ -25,10 +27,12 @@ class Test extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('text', 'required'),
+			array('product_id, user_name, message', 'required'),
+			array('product_id', 'numerical', 'integerOnly'=>true),
+			array('user_name', 'length', 'max'=>25),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, text', 'safe', 'on'=>'search'),
+			array('id, product_id, user_name, message', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -50,7 +54,9 @@ class Test extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'text' => 'Text',
+			'product_id' => 'Product',
+			'user_name' => 'User Name',
+			'message' => 'Сообщение',
 		);
 	}
 
@@ -73,7 +79,9 @@ class Test extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-		$criteria->compare('text',$this->text,true);
+		$criteria->compare('product_id',$this->product_id);
+		$criteria->compare('user_name',$this->user_name,true);
+		$criteria->compare('message',$this->message,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -84,7 +92,7 @@ class Test extends CActiveRecord
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Test the static model class
+	 * @return Reviews the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

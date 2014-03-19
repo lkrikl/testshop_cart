@@ -39,9 +39,7 @@ class OrderController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('nikolay'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+			
 		);
 	}
 
@@ -52,9 +50,17 @@ class OrderController extends Controller
 	public function actionView($id)
 	{
          //       $result = Orderproduct::model()->findAllByAttributes(array('order_id'=> $model->id));
-		$this->render('view',array(
+            $result = Orderproduct::model()->findAllByAttributes(array(
+                'order_id'=> $id
+                ));
+            $order = Order::model()->findByPk($id);
+            $locality = NovaPoshtaCities::model()->findByPk($order->settlement_delivery);
+            $address = NovaposhtaWarehouse::model()->findByPk($order->delivery_address);
+                    $this->render('view',array(
 			'model'=>$this->loadModel($id),
-           //             'result' => $result
+                        'locality'=>$locality,
+                        'address'=>$address,
+                        'result'=>$result,
 		));
 	}
 
@@ -163,4 +169,8 @@ class OrderController extends Controller
 			Yii::app()->end();
 		}
 	}
+        public function actionReloadorder() {
+            $looking = Product::model()->findAllByPk($_SESSION['looking']);
+            $this->render('reloadorder',array('looking'=>$looking));
+        }
 }

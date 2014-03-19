@@ -51,14 +51,14 @@ $('.search-form form').submit(function(){
 	//	'delivery_id',
 	//	'delivery_price',
                 'type_of_delivery',
-                'settlement_delivery'=>array(
-                    'name' => 'settlement_delivery',
-                    'value' => '$data->novaposhtacities->name_ru'
-                ),
-                'delivery_address'=>array(
-                    'name' => 'delivery_address',
-                    'value' => '$data->novaposhtawarehouse->address_ru'
-                ),
+//                'settlement_delivery'=>array(
+//                    'name' => 'settlement_delivery',
+//                    'value' => '$data->novaposhtacities->name_ru'
+//                ),
+//                'delivery_address'=>array(
+//                    'name' => 'delivery_address',
+//                    'value' => '$data->novaposhtawarehouse->address_ru'
+//                ),
                 'total_price',
 		'status_id' => array(
                     'name' => 'status_id',

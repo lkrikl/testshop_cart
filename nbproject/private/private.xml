@@ -3,18 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/X:/home/yii.ww/www/protected/views/site/error.php</file>
             <file>file:/X:/home/yii.ww/www/css/main.css</file>
-            <file>file:/X:/home/yii.ww/www/protected/controllers/OrderController.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/views/site/index.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/models/Category.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/models/Manufacturer.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/views/order/index.php</file>
-            <file>file:/X:/home/yii.ww/www/js/script.js</file>
-            <file>file:/X:/home/yii.ww/www/protected/views/page/index.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/views/layouts/column2.php</file>
             <file>file:/X:/home/yii.ww/www/protected/views/layouts/main.php</file>
-            <file>file:/X:/home/yii.ww/www/protected/models/Order.php</file>
+            <file>file:/X:/home/yii.ww/www/protected/controllers/LookingController.php</file>
+            <file>file:/X:/home/yii.ww/www/protected/views/page/view.php</file>
         </group>
     </open-files>
 </project-private>

@@ -1,4 +1,20 @@
+//function show()  
+//        {  
+//            $.ajax({  
+//                url: "/order/reloadorder",  
+//                cache: false,  
+//                success: function(data){  
+//                    var container = $("#reloadtest")
+//                    container.text('');
+//                    container.append(data);  
+//                    }  
+//            });  
+//        }  
+
 $(document).ready(function () {
+//    show();  
+//    setInterval('show()',1000);  
+    
     $('#block-cart > p').toggle(
         function () {
             $('#block-cart > div').show();
@@ -7,7 +23,7 @@ $(document).ready(function () {
             $('#block-cart > div').hide();
         }
     );
-    
+  
     $('#choice_of_delivery').click(function() {
         if ($(this).is(':checked')) {
             $("#new_mail_delivery").show();
@@ -23,9 +39,17 @@ $(document).ready(function () {
             $('#warehouses').val("");
             $('#Order_user_address').val("");
         }
+    });    
+    
+    $('#choose_view_block').click(function() {
+            $("#centerLayer").show();
+            $("#product_block_list").hide();
     });
-    
-    
+    $('#choose_view_list').click(function() {
+            $("#centerLayer").hide();
+            $("#product_block_list").show();
+    });
+     
     $( "#block-cart" ).focus(function() {
     alert( "Handler for .focus() called." );
     });
@@ -62,6 +86,7 @@ $(document).ready(function () {
             success: function (data) {
                 $("#message_cart").html("Позиция удалена!").show();
                     setTimeout('$("#message_cart").hide();', 2600);
+                    location.reload();  
             }
         });
     });
@@ -80,7 +105,8 @@ $(document).ready(function () {
                      $('#total_price').text(data.total);
                      $('#count').text(data.count);
                      $('#price').text(data.total);
-                     $('#block-cart span.count').text(data.count);                  
+                     $('#block-cart span.count').text(data.count);
+                     location.reload();  
                 }
             }
        });
@@ -107,5 +133,22 @@ $(document).ready(function () {
                 }
             }
         });
+    });
+    
+    $('#tabs .characteristics').click(function() {
+            $("#characteristics").show();
+            $("#photo_product").hide();
+            $("#reviews").hide();
+            
+    });
+    $('#tabs .photo_product').click(function() {
+            $("#characteristics").hide();
+            $("#photo_product").show();
+            $("#reviews").hide();
+    });
+    $('#tabs .reviews').click(function() {
+            $("#characteristics").hide();
+            $("#photo_product").hide();
+            $("#reviews").show();
     });
 });

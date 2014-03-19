@@ -32,7 +32,13 @@ class SiteController extends Controller
             
                 $product = Product::model()->findAll();
             
-            
+                krsort($product);
+                
+                    session_start();
+                        if(!isset($_SESSION['looking'])){
+                            $_SESSION['looking'] = array();
+                        };
+
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
 		$this->render('index',array('product'=>$product));
@@ -40,9 +46,23 @@ class SiteController extends Controller
         public function actionView($id)
 	{
             
-                $model = Product::model()->findByPk($id);
-            
-		$this->render('view', array('model'=>$model));
+                $product = Product::model()->findByPk($id);
+                $new_reviews = new Reviews;
+                $reviews = Reviews::model()->findAllByAttributes(array('product_id'=>$id));
+                if(isset($_POST['Reviews']))
+                {
+                    $new_reviews->attributes=$_POST['Reviews'];
+                    if($new_reviews->save()){
+                        Yii::app()->user->setFlash('contact', 'Спасибо. Ваш комментарий опубликован.');
+                    }
+                        
+                }
+                
+		$this->render('view', array(
+                    'product'=>$product,
+                    'new_reviews'=>$new_reviews,
+                    'reviews'=>$reviews,
+                    ));
 	}
 
 	/**

@@ -56,45 +56,22 @@ $this->menu=array(
 		'admin_comment',
 	),
 )); ?>
+
+<br>
+<h4>Адрес доставки</h4>
 <?php 
-    $result = Orderproduct::model()->findAllByAttributes(array(
-                'order_id'=> $model->id
-                ));
-//            foreach ($result as $one) {
-//                echo $one->product_id.'<br>';
-//                echo $one->quantity.'<br>';
-//                echo $one->price.'<br>';
-//            }
+    echo $model->user_address.':<br>';
+    echo $locality->name_ru.'<br>';
+    echo $address->address_ru;
 ?>
-
-
-<b><p align="right">
-            <?php
-                
-                    foreach ($result as $one) : ?>
-                      Всего товаров  - <?php echo $one->total_product; ?><br>
-                        
-                        Общая сумма - <?php echo $one->total_price; ?><br>
-                        
-                    <?php endforeach; ?>    
-                           
-                   
-            
-        </p></b>
 <hr>
-
-
-
 <table>
-    <tr>
-        <td>
-            ID товара
+    <tr class="cap">       
+         <td>
+            Фото
         </td>
         <td>
             Название
-        </td>
-        <td>
-            Фото
         </td>
         <td>
             Количество
@@ -108,13 +85,10 @@ $this->menu=array(
      <?php foreach ($result as $one): ?>
     <tr>
         <td>
-            <?php echo $one->product_id; ?>
+            <?php echo $one->image; ?>
         </td>
         <td>
             <?php echo $one->name; ?>
-        </td>
-        <td>
-            <?php echo $one->image; ?>
         </td>
         <td>
             <?php echo $one->quantity; ?>
@@ -127,3 +101,29 @@ $this->menu=array(
     </tr>
     <?php endforeach; ?>
 </table>
+<?php 
+    echo Yii::app()->user->lastname.' ';
+    echo Yii::app()->user->firstname.' ';
+    echo Yii::app()->user->email.' ';
+?>
+<div id="reloadtest">
+<b>
+            <?php 
+//                $looking = Product::model()->findAllByPk($_SESSION['looking']);
+//                echo count($looking).'<br>';
+//                if(!isset($order)) {
+//                $order = Order::model()->count();
+//                
+//                $summa = Order::model()->count() - $order;
+//                echo $summa;
+//                }
+//                else {
+//                    $summa = Order::model()->count() - $order;
+//                echo $summa;
+//                }
+//                
+//                
+//                
+                
+            ?></b>
+</div>    

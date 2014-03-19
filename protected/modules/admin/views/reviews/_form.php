@@ -1,13 +1,13 @@
 <?php
-/* @var $this TestController */
-/* @var $model Test */
+/* @var $this ReviewsController */
+/* @var $model Reviews */
 /* @var $form CActiveForm */
 ?>
 
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'test-form',
+	'id'=>'reviews-form',
 	// Please note: When you enable ajax validation, make sure the corresponding
 	// controller action is handling ajax validation correctly.
 	// There is a call to performAjaxValidation() commented in generated controller code.
@@ -20,9 +20,21 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'text'); ?>
-		<?php echo $form->textArea($model,'text',array('rows'=>6, 'cols'=>50)); ?>
-		<?php echo $form->error($model,'text'); ?>
+		<?php echo $form->labelEx($model,'product_id'); ?>
+		<?php echo $form->textField($model,'product_id'); ?>
+		<?php echo $form->error($model,'product_id'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'user_name'); ?>
+		<?php echo $form->textField($model,'user_name',array('size'=>25,'maxlength'=>25)); ?>
+		<?php echo $form->error($model,'user_name'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'message'); ?>
+		<?php echo $form->textArea($model,'message',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'message'); ?>
 	</div>
 
 	<div class="row buttons">

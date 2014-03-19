@@ -1,16 +1,22 @@
 <?php
-/* @var $this MonitorController */
+/* @var $this LookingController */
 
 $this->breadcrumbs=array(
-	$category->title,
+	'Просмотренные товары',
 );
 ?>
+  
 <p class="messagecart"></p>
-    Сортировка: 
-    <?php echo CHtml::submitButton(Картинками,array('name'=>'choose_view_block','id'=>'choose_view_block'));?>
-    <?php echo CHtml::submitButton(Списком,array('name'=>'choose_view_list','id'=>'choose_view_list'));?>
+<?php
+    if($looking){
+        echo 'Сортировка: ';
+        echo CHtml::submitButton(Картинками,array('name'=>'choose_view_block','id'=>'choose_view_block'));
+        echo CHtml::submitButton(Списком,array('name'=>'choose_view_list','id'=>'choose_view_list'));
+        echo CHtml::link('Очистить историю', array('#'), array('id'=>'clear_looking'));
+    }
+?>
 <div id="centerLayer">
-    <?php foreach($models as $one): ?>
+    <?php foreach($looking as $one): ?>
     <div class="product_block">
         <div class="image_product"><?php echo CHtml::link($one->image,array('view','id'=>$one->id)); ?></div>
         <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b>
@@ -23,7 +29,7 @@ $this->breadcrumbs=array(
 </div>
 
     <div id="product_block_list">           
-     <?php foreach($models as $one): ?>
+     <?php foreach($looking as $one): ?>
         <div id="product_list">
             <div class="image_product_list"><?php echo CHtml::link($one->image,array('view','id'=>$one->id)); ?></div>
            <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b><br />
@@ -34,8 +40,6 @@ $this->breadcrumbs=array(
     </div>
     <?php endforeach; ?>
     </div>
-<?php if (!$models)    echo 'В данной категории товаров нет.'; ?>
-            
-             
-         
-       
+   
+<?php if (!$looking)    echo 'Вы не просмотрели ни одного товара.'; ?>
+    

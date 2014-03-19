@@ -93,7 +93,7 @@ class Order extends CActiveRecord
 			'delivery_address' => 'Адрес доставки',
 			'type_of_delivery' => 'Тип доставки',
 			'delivery_price' => 'Delivery Price',
-			'total_price' => 'Total Price',
+			'total_price' => 'Общая сумма',
 			'status_id' => 'Status',
 			'paid' => 'Paid',
 			'user_name' => 'Ф.И.О.',

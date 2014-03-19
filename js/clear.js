@@ -1,6 +1,18 @@
 $(document).ready(function () {
     
+        
 
+     $('#clear_looking').click(function () {
+        $.ajax({
+            type: "POST",
+            url: "/looking/clear",
+            dataType: "html",
+            success: function (data) {
+                location.reload();  
+            }
+        }); 
+    });
+    
     $('.clear_cart').click(function () {
         var product_id = $(this).data("id");
         var count = 0;

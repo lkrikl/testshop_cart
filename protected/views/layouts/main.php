@@ -3,7 +3,6 @@
 <html lang="en-US">
 <head>
 	<meta charset="utf-8" >
-
         <!-- blueprint CSS framework -->
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/screen.css" media="screen, projection" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/print.css" media="print" />
@@ -13,27 +12,28 @@
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/clear.js"></script>
-       
-         
-      
-        
 	<?php //echo Yii::app()->bootstrap->register(); ?> 
-
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
-
 <body>
     <pre><?php // print_r( Yii::app()->session->get("products")); ?></pre>
 
 <div class="container" id="page">
 
 	<div id="header">
-            <a href="/"> <img src="/images/Home_page.png"></a>	
+            <a href="/"> <img src="/images/Home_page.png"></a>
+            <a href="/looking" id="looking"><img src="/images/looking.jpg"></a>
+            
 	</div><!-- header -->
-        <div id="nadfooter"> 
+        <div id="nadfooter"><b>
+            <?php 
+                $looking = Product::model()->findAllByPk($_SESSION['looking']);
+                echo count($looking) 
+            ?></b>
+            
             <!--img src="/images/logo_axioma.png"-->
                 <class id="headinfo">
                     <a href="">Оплата и доставка </a>
@@ -81,11 +81,7 @@
 		<?php $this->widget('zii.widgets.CMenu',array(
 			 'items'=>  Category::menu('top'),
 		)); ?>
-            
-            
-             
-        </div>
-        <div id="usermainmenu">
+       <div id="usermainmenu">
             <?php $this->widget('zii.widgets.CMenu',array(
                                         'items'=>array(
                                                 array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
@@ -108,6 +104,31 @@
 	<?php echo $content; ?>
 
 	<div class="clear"></div>
+        <?php if(count($_SESSION['looking']) > 0): ?>
+        <div id="view_item">
+            <?php  
+                session_start();
+                $looking = Product::model()->findAllByPk($_SESSION['looking']);
+                   
+            ?>
+            <p class="view_product"><img src="/images/looking.png">Просмотренные товары</p>
+            <div id="centerLayer">
+                <?php foreach($looking as $one): ?>
+                    <div class="product_block">
+                        <div class="image_product"><?php echo CHtml::link($one->image,array('view','id'=>$one->id)); ?></div>
+                        <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b>
+                        <br />
+                        <?php echo $one->price; ?><br />
+                        <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
+                        <div id="description"><?php echo substr($one->description,0,300); ?></div>
+                    </div>
+                <?php endforeach; ?>    
+            </div>
+            
+            
+            
+        </div><div class="clear"></div>
+        <?php endif; ?>
         <div id="nadfooter">EMAIL ТЕЛЕФОН АДРЕС </div>
 	<div id="footer">
 		
