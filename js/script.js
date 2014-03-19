@@ -91,25 +91,28 @@ $(document).ready(function () {
         });
     });
     
-    $('#recalculate').click(function () {
-        var recalculate_id = $('.count_product').data("id");
-        var recalculate_value = $('.count_product').val();
+    $('#recalculate').click(function (e) {
+        e.preventDefault();
+        var recalculate_id = $('.count_product');
+        recalculate_id.each(function() {
             $.ajax({
-            type: "POST",
-            url: "/cart/recalculate",
-            dataType: "html",
-            data: {"recalculate_id": recalculate_id, "recalculate_value": recalculate_value},
-            success: function (data) {
-                data = $.parseJSON(data);
-                if (data.status) {
-                     $('#total_price').text(data.total);
-                     $('#count').text(data.count);
-                     $('#price').text(data.total);
-                     $('#block-cart span.count').text(data.count);
-                     location.reload();  
+                type: "POST",
+                url: "/cart/recalculate",
+                dataType: "html",
+                data: {"recalculate_id": $(this).data("id"), "recalculate_value": $(this).val()},
+                success: function (data) {
+                    data = $.parseJSON(data);
+                    if (data.status) {
+                        $('#total_price').text(data.total);
+                        $('#count').text(data.count);
+                        $('#price').text(data.total);
+                        $('#block-cart span.count').text(data.count);
+                    }
                 }
-            }
-       });
+            });
+        });
+        location.reload();
+        return false;
     });
 
     $('.add-product').click(function () {
