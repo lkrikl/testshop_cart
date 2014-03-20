@@ -20,12 +20,13 @@ $this->breadcrumbs=array(
     
     
 ?>
+
     <hr>
     <p class="add-product" data-id="<?php ECHO $product->id; ?>"></p>
-    <hr>
+     <hr>
     <ul id="tabs">
         <li class="characteristics">Характеристики</li>
-        <li clsss="photo_product">Фото</li>
+        <li class="photo_product">Фото</li>
         <li class="reviews">Отзывы(<?php echo count($reviews) ?>)</li>
     </ul>
 <div id="characteristics">     
@@ -38,22 +39,23 @@ $this->breadcrumbs=array(
                 echo $product->image;
         ?>
     </div>
+    <div id="add_reviews_about_product">  
+        <h2>Оставьте комментарий</h2>
+        <p>Комментарий:</p>
+        <?php echo CHtml::hiddenField('reviews_product_id',"$product->id");  ?><br>
+        <?php echo CHtml::textArea('reviews_user_message','',array('rows'=>6,'cols'=>50));  ?><br>
+        <?php echo CHtml::submitButton('Добавить комментарий',array('id'=>'send_reviews_message')) ?>
+
+    </div>
     <div id="reviews">
-        
         <?php 
                 foreach ($reviews as $one) : ?>
-        <p><b><?php echo $one->user_name; ?>:</b></p>
-                    <?php echo $one->message; ?>
+                    <div id="reviews_message">
+                    <b><?php echo $one->user_name; ?>:</b>
+                    <class id="time_send"><?php echo $one->created; ?></class><br>
+                    <?php echo $one->message; ?><br>
+                    </div>            
                <?php endforeach; ?> <br>
-       <?php if (Yii::app()->user->hasFlash('contact')): ?>
-
-            <div class="flash-success">
-                <?php echo Yii::app()->user->getFlash('contact'); ?>
-            </div>
-        <?php else : ?>
-        <?php $this->renderpartial('new_reviews',array(
-            'model'=>$new_reviews,
-            'product'=>$product,
-            )) ?>
-        <?php endif; ?>
     </div>
+    
+    

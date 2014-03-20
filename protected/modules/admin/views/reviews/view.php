@@ -3,20 +3,20 @@
 /* @var $model Reviews */
 
 $this->breadcrumbs=array(
-	'Reviews'=>array('index'),
+	'Комментарии'=>array('index'),
 	$model->id,
 );
 
 $this->menu=array(
-	array('label'=>'List Reviews', 'url'=>array('index')),
-	array('label'=>'Create Reviews', 'url'=>array('create')),
-	array('label'=>'Update Reviews', 'url'=>array('update', 'id'=>$model->id)),
-	array('label'=>'Delete Reviews', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage Reviews', 'url'=>array('admin')),
+	array('label'=>'Журнал комментариев', 'url'=>array('index')),
+	array('label'=>'Добавить комментарии', 'url'=>array('create')),
+	array('label'=>'Редактировать комментарий', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Удалить комментарий', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Удалить?')),
+	
 );
 ?>
 
-<h1>View Reviews #<?php echo $model->id; ?></h1>
+<h1>Просмотр комментария #<?php echo $model->id; ?></h1>
 
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
@@ -25,5 +25,7 @@ $this->menu=array(
 		'product_id',
 		'user_name',
 		'message',
+		'created',
+		'status',
 	),
 )); ?>

@@ -8,6 +8,8 @@
  * @property integer $product_id
  * @property string $user_name
  * @property string $message
+ * @property string $created
+ * @property integer $status
  */
 class Reviews extends CActiveRecord
 {
@@ -27,12 +29,12 @@ class Reviews extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('product_id, user_name, message', 'required'),
-			array('product_id', 'numerical', 'integerOnly'=>true),
+			array('product_id, user_name, message, created', 'required'),
+			array('product_id, status', 'numerical', 'integerOnly'=>true),
 			array('user_name', 'length', 'max'=>25),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, product_id, user_name, message', 'safe', 'on'=>'search'),
+			array('id, product_id, user_name, message, created, status', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -44,6 +46,7 @@ class Reviews extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'product' => array(self::BELONGS_TO,'product', 'product_id')
 		);
 	}
 
@@ -56,7 +59,9 @@ class Reviews extends CActiveRecord
 			'id' => 'ID',
 			'product_id' => 'Product',
 			'user_name' => 'User Name',
-			'message' => 'Сообщение',
+			'message' => 'Message',
+			'created' => 'Created',
+			'status' => 'Status',
 		);
 	}
 
@@ -82,6 +87,8 @@ class Reviews extends CActiveRecord
 		$criteria->compare('product_id',$this->product_id);
 		$criteria->compare('user_name',$this->user_name,true);
 		$criteria->compare('message',$this->message,true);
+		$criteria->compare('created',$this->created,true);
+		$criteria->compare('status',$this->status);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

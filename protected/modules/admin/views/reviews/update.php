@@ -3,19 +3,19 @@
 /* @var $model Reviews */
 
 $this->breadcrumbs=array(
-	'Reviews'=>array('index'),
+	'Комментарии'=>array('index'),
 	$model->id=>array('view','id'=>$model->id),
-	'Update',
+	'Редактировать',
 );
 
 $this->menu=array(
-	array('label'=>'List Reviews', 'url'=>array('index')),
-	array('label'=>'Create Reviews', 'url'=>array('create')),
-	array('label'=>'View Reviews', 'url'=>array('view', 'id'=>$model->id)),
-	array('label'=>'Manage Reviews', 'url'=>array('admin')),
+	array('label'=>'Журнал комментариев', 'url'=>array('index')),
+	array('label'=>'Добавить комментарий', 'url'=>array('create')),
+	array('label'=>'Просмотр комментария', 'url'=>array('view', 'id'=>$model->id)),
+	
 );
 ?>
 
-<h1>Update Reviews <?php echo $model->id; ?></h1>
+<h1>Редактировать комментарий<?php echo $model->id; ?></h1>
 
 <?php $this->renderPartial('_form', array('model'=>$model)); ?>

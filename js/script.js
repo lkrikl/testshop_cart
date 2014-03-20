@@ -142,16 +142,69 @@ $(document).ready(function () {
             $("#characteristics").show();
             $("#photo_product").hide();
             $("#reviews").hide();
+            $("#add_reviews_about_product").hide();
             
     });
     $('#tabs .photo_product').click(function() {
             $("#characteristics").hide();
             $("#photo_product").show();
             $("#reviews").hide();
+            $("#add_reviews_about_product").hide();
     });
     $('#tabs .reviews').click(function() {
             $("#characteristics").hide();
             $("#photo_product").hide();
             $("#reviews").show();
+            $("#add_reviews_about_product").show();
     });
+    
+    
+    
+    
+    
+    
+    $('#send_reviews_message').click(function () {
+        var product_id = $('#reviews_product_id').val();
+        var reviews_message = $('#reviews_user_message').val();
+        $("#message_cart").html("Добавляю.........................................").show();
+            $.ajax({
+            type: "POST",
+            url: "/Reviews/Addcomment",
+            dataType: "html",
+            data: {"product_id": product_id, "reviews_message": reviews_message},
+            success: function (data) {
+                data = $.parseJSON(data);
+                    if (data.status) {
+                    $("#message_cart").html("Ошибка! Введите комментарий!").show();
+                    setTimeout('$("#message_cart").hide();', 2600);
+                    }
+                    else {
+                        $("#message_cart").html("Ваш комментарий опубликован!").show();
+                        setTimeout('$("#message_cart").hide();', 2600);
+                        location.reload();  
+                        $("#characteristics").hide();
+                        $("#photo_product").hide();
+                        $("#reviews").show();
+                        $("#add_reviews_about_product").show();
+                    }
+                
+            }
+        });
+    });
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 });

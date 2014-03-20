@@ -25,18 +25,18 @@
             <a href="/looking" id="looking"><img src="/images/looking.jpg"></a>
 	</div><!-- header -->
         <div id="nadfooter"><b>
-            <?php 
+            <?php
+                if(isset($looking)){
                 $looking = Product::model()->findAllByPk($_SESSION['looking']);
-                echo count($looking) 
+          //      $product = Product::model()->findByPk($id);
+                echo count($looking);
+                }
             ?></b>
-            
-            <!--img src="/images/logo_axioma.png"-->
                 <class id="headinfo">
                     <a href="">Оплата и доставка </a>
                     <a href="">Сотрудничество </a>
                     <a href="">О компании </a>
                     <a href="">Связаться с нами </a>
-                    
                 </class>  
                              <div id="block-cart">
                                 <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
@@ -58,14 +58,10 @@
                     'name'=>'product_name',
                     'url'=>array('/search/autocomplete'),
                     'minChars'=>2,
-
-                  //  'value'=>'поиск',
-                )
+               )
             );
             ?>
-                
             </form>
-            
         </div>
         <!-- mainmenu -->
 	<div id="mainmenu">
@@ -79,9 +75,7 @@
                                                 array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
                                                 array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
                                                 array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest, 'itemOptions' => array( 'class' => 'userclass' )),
-
-
-                                        ),
+                                   ),
                                             )); 
                              ?>
         </div>
@@ -100,11 +94,11 @@
             <?php  
                 session_start();
                 $looking = Product::model()->findAllByPk($_SESSION['looking']);
-                   
             ?>
             <p class="view_product"><img src="/images/looking.png">Просмотренные товары</p>
             <div id="centerLayer">
                 <?php foreach($looking as $one): ?>
+                    <?php //if($one->id !== $product->id) : ?>
                     <div class="product_block">
                         <div class="image_product"><?php echo CHtml::link($one->image,array('view','id'=>$one->id)); ?></div>
                         <b><?php echo CHtml::link($one->name,array('view','id'=>$one->id)); ?></b>
@@ -113,19 +107,15 @@
                         <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
                         <div id="description"><?php echo substr($one->description,0,300); ?></div>
                     </div>
+                    <?php //endif; ?>
                 <?php endforeach; ?>    
             </div>
-            
-            
-            
         </div><div class="clear"></div>
         <?php endif; ?>
         <div id="nadfooter">EMAIL ТЕЛЕФОН АДРЕС </div>
 	<div id="footer">
-		
 		<?php echo Yii::powered(); ?>&copy; <?php echo date('Y'); ?>
 	</div><!-- footer -->
-
 </div><!-- page -->
 <div id="message_cart"><p>Товар добавлен в корзину</p></div>
     <script type="text/javascript">

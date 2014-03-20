@@ -47,20 +47,17 @@ class SiteController extends Controller
 	{
             
                 $product = Product::model()->findByPk($id);
-                $new_reviews = new Reviews;
-                $reviews = Reviews::model()->findAllByAttributes(array('product_id'=>$id));
+                $reviews = Reviews::model()->findAllByAttributes(array('product_id'=>$id,'status'=>0));
                 if(isset($_POST['Reviews']))
                 {
                     $new_reviews->attributes=$_POST['Reviews'];
                     if($new_reviews->save()){
                         Yii::app()->user->setFlash('contact', 'Спасибо. Ваш комментарий опубликован.');
                     }
-                        
                 }
-                
+                krsort($reviews);
 		$this->render('view', array(
                     'product'=>$product,
-                    'new_reviews'=>$new_reviews,
                     'reviews'=>$reviews,
                     ));
 	}

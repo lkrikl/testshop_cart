@@ -74,7 +74,7 @@
         <h4>Товаров для заказа нет</h4>
 
     <?php else: ?>
-        <?php echo CHtml::checkBox(choice_of_delivery); ?> Доставка Новой Почтой
+        <?php echo CHtml::checkBox('choice_of_delivery'); ?> Доставка Новой Почтой
         <div id="new_mail_delivery">
         <p>Населенный пункт</p>
         <?php echo CHtml::dropDownList('drop', '', $nova_cities, array('empty'=>'')); ?>

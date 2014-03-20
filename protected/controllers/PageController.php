@@ -23,7 +23,6 @@ class PageController extends Controller
                         if(!isset($_SESSION['looking'])){
                             $_SESSION['looking'] = array();
                         };
-                $new_reviews = new Reviews;
                 $reviews = Reviews::model()->findAllByAttributes(array('product_id'=>$id));
                 if(isset($_POST['Reviews']))
                 {
@@ -35,7 +34,6 @@ class PageController extends Controller
                 }        
                $this->render('view', array(
                     'product'=>$product,
-                    'new_reviews'=>$new_reviews,
                     'reviews'=>$reviews,
                     ));
 	}

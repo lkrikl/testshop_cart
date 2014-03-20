@@ -31,8 +31,18 @@
 		<?php echo $form->textArea($model,'message',array('rows'=>6, 'cols'=>50)); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->label($model,'created'); ?>
+		<?php echo $form->textField($model,'created'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'status'); ?>
+		<?php echo $form->textField($model,'status'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton('Search'); ?>
+		<?php echo CHtml::submitButton('Поиск'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

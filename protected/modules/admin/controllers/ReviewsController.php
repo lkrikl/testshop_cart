@@ -116,6 +116,7 @@ class ReviewsController extends Controller
 		if(!isset($_GET['ajax']))
 			$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('index'));
 	}
+
 	/**
 	 * Manages all models.
 	 */

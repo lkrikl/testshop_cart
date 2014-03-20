@@ -42,6 +42,7 @@
 				array('label'=>'Заказы', 'url'=>array('/admin/order', 'view'=>'about')),
                                 array('label'=>'Категории', 'url'=>array('/admin/category', 'view'=>'about')),
                                 array('label'=>'Товары', 'url'=>array('/admin/product', 'view'=>'about')),
+                                array('label'=>'Комментарии', 'url'=>array('/admin/reviews', 'view'=>'about')),
                                 array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

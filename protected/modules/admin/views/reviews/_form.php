@@ -37,8 +37,20 @@
 		<?php echo $form->error($model,'message'); ?>
 	</div>
 
+	<div class="row">
+		<?php echo $form->labelEx($model,'created'); ?>
+		<?php echo $form->textField($model,'created'); ?>
+		<?php echo $form->error($model,'created'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'status'); ?>
+		<?php echo $form->textField($model,'status'); ?>
+		<?php echo $form->error($model,'status'); ?>
+	</div>
+
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Добавить' : 'Добавить'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

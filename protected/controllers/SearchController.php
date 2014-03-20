@@ -13,9 +13,24 @@ class SearchController extends Controller
         public function actionView($id)
 	{
             
-                $model = Product::model()->findByPk($id);
-            
-		$this->render('view', array('model'=>$model));
+                $product = Product::model()->findByPk($id);
+                session_start();
+                        if(!isset($_SESSION['looking'])){
+                            $_SESSION['looking'] = array();
+                        };
+                $reviews = Reviews::model()->findAllByAttributes(array('product_id'=>$id));
+                if(isset($_POST['Reviews']))
+                {
+                    $new_reviews->attributes=$_POST['Reviews'];
+                    if($new_reviews->save()){
+                        Yii::app()->user->setFlash('contact', 'Спасибо. Ваш комментарий опубликован.');
+                    }
+                        
+                }        
+               $this->render('view', array(
+                    'product'=>$product,
+                    'reviews'=>$reviews,
+                    ));
 	}
         public function actionAutocomplete() {
             
