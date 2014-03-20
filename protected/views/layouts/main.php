@@ -19,14 +19,10 @@
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
 </head>
 <body>
-    <pre><?php // print_r( Yii::app()->session->get("products")); ?></pre>
-
 <div class="container" id="page">
-
 	<div id="header">
             <a href="/"> <img src="/images/Home_page.png"></a>
             <a href="/looking" id="looking"><img src="/images/looking.jpg"></a>
-            
 	</div><!-- header -->
         <div id="nadfooter"><b>
             <?php 
@@ -42,20 +38,15 @@
                     <a href="">Связаться с нами </a>
                     
                 </class>  
-               
-            
                              <div id="block-cart">
                                 <p>Корзина (<span class="count"><?php echo Yii::app()->shoppingCart->getItemsCount();?></span>)
-                                    
                                     <div id="update_scart">
-                                        
                                         <p>Товаров: <span class="count"> <?php echo Yii::app()->shoppingCart->getItemsCount();?></span></p>
                                         <p>На сумму: <span data-price="0" id="price">
                                             <?php echo Yii::app()->shoppingCart->getCost();?>
                                             </span>
                                         </p><a href="#" class="clear_cart"/>Очистить</a>
                                         <a href="/order">Оформить</a>
-
                                     </div>
                              </div>
             
