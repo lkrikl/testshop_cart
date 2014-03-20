@@ -3,3 +3,4 @@ protected/runtime/
 themes/classic/views/
 .idea/
 protected/config/main.php 
+protected/runtime/application.log*
