@@ -4,13 +4,13 @@
     <div class="flash-success">
       <?php echo Yii::app()->user->getFlash('contact'); ?>
     </div>
-    <div id="view_order">Просмотр заказа № <?php echo $orderform->id; ?></div>
+    <div id="view_order"><?php echo Yii::t('app', 'View order № "{order_id}"', array('{order_id}' => $orderform->id)); ?></div>
     <div id="ordering_Information">
       <table>
         <tr>
-          <td><b>Название</b></td>
-          <td><b>Количество</b></td>
-          <td><b>Сумма</b></td>
+          <td><b><?php echo Yii::t('app', 'Name'); ?></b></td>
+          <td><b><?php echo Yii::t('app', 'Quantity'); ?></b></td>
+          <td><b><?php echo Yii::t('app', 'Amount'); ?></b></td>
         </tr>
         <?php foreach ($ordered_product as $one): ?>
           <tr>
@@ -21,27 +21,27 @@
           </tr>
         <?php endforeach; ?>
       </table>
-      <div>Всего к оплате: <b><?php echo $total_price; ?> $</b></div>
+      <div><?php echo Yii::t('app', 'Total to pay:'); ?> <b><?php echo $total_price; ?> $</b></div>
       <div id="recipient_data">
-        <h3>Данные получателя</h3>
-        <p><b>Ф.И.О.: </b><?php echo $orderform->user_name ?></p>
-        <p><b>E-mail: </b><?php echo $orderform->user_email ?></p>
-        <p><b>Адрес: </b><?php echo $orderform->user_address ?></p>
-        <p><b>Телефон: </b><?php echo $orderform->user_phone ?></p>
+        <h3><?php echo Yii::t('app', 'Recipient data'); ?></h3>
+        <p><b><?php echo Yii::t('app', 'Name:'); ?> </b><?php echo $orderform->user_name ?></p>
+        <p><b><?php echo Yii::t('app', 'E-mail:'); ?> </b><?php echo $orderform->user_email ?></p>
+        <p><b><?php echo Yii::t('app', 'Address:'); ?> </b><?php echo $orderform->user_address ?></p>
+        <p><b><?php echo Yii::t('app', 'Phone:'); ?> </b><?php echo $orderform->user_phone ?></p>
       </div>
     </div>
 
   <?php else: ?>
     <div id="registration_order">
-      <h1>Оформление товара</h1>
+      <h1><?php echo Yii::t('app', 'Checkout'); ?></h1>
       <?php if (!Yii::app()->shoppingCart->isEmpty(1)) : ?>
       <table>
         <tr>
           <td></td>
-          <td>Фото</td>
-          <td>Наименование товара</td>
-          <td>Количество</td>
-          <td>Цена</td>
+          <td><?php echo Yii::t('app', 'Image'); ?></td>
+          <td><?php echo Yii::t('app', 'Product name'); ?></td>
+          <td><?php echo Yii::t('app', 'Quantity'); ?></td>
+          <td><?php echo Yii::t('app', 'Price'); ?></td>
         </tr>
         <?php foreach (Yii::app()->shoppingCart as $one): ?>
           <tr>
@@ -62,21 +62,20 @@
           </tr>
         <?php endforeach; ?>
       </table>
-      <b>
-        <p align="right"><?php echo CHtml::submitButton('Пересчитать', array('id' => 'recalculate',)); ?>
-
+        <p align="right">
+          <b><?php echo CHtml::submitButton('Пересчитать', array('id' => 'recalculate',)); ?>
           Всего товаров -
-          <class id="count"><?php echo Yii::app()->shoppingCart->getItemsCount(); ?></class>
+          <span id="count"><?php echo Yii::app()->shoppingCart->getItemsCount(); ?></span>
           <br>
           Общая сумма -
-          <class id="total_price"><?php echo Yii::app()->shoppingCart->getCost(); ?></class>
+          <span id="total_price"><?php echo Yii::app()->shoppingCart->getCost(); ?></span>
           <?php endif; ?>
+            </b>
         </p>
-      </b>
       <hr>
     </div>
     <?php if (Yii::app()->shoppingCart->isEmpty(1)) : ?>
-      <h4>Товаров для заказа нет</h4>
+      <h4><?php echo Yii::t('app', 'Your shopping card is empty'); ?></h4>
     <?php else: ?>
       <?php echo CHtml::checkBox('choice_of_delivery'); ?> Доставка Новой Почтой
       <div id="new_mail_delivery">
@@ -85,14 +84,13 @@
         <div id="loader"><img src="/images/loading.gif"></div>
         <div id="warehouseContainer"></div>
       </div>
-      <h3>Основная информация</h3>
+      <h3><?php echo Yii::t('app', 'Summary'); ?></h3>
       <p class="messagecart"></p>
       <?php  echo $this->renderPartial('orderform', array(
         'model' => $orderform,
         'nova_cities' => $nova_cities
       ));
       ?>
-
     <?php endif; ?>
   <?php endif; ?>
 </div>

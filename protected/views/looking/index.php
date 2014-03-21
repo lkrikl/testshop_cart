@@ -1,20 +1,16 @@
 <?php
 /* @var $this LookingController */
 
-$this->breadcrumbs = array(
-  'Просмотренные товары',
-);
-?>
+$this->breadcrumbs = array('Viewed items');?>
 
 <p class="messagecart"></p>
 <?php
-if ($looking) {
-  echo 'Сортировка: ';
-  echo CHtml::submitButton(Картинками, array('name' => 'choose_view_block', 'id' => 'choose_view_block'));
-  echo CHtml::submitButton(Списком, array('name' => 'choose_view_list', 'id' => 'choose_view_list'));
-  echo CHtml::link('Очистить историю', array('#'), array('id' => 'clear_looking'));
-}
-?>
+if ($looking) : ?>
+  <?php echo Yii::t('app', 'Sort:'); ?>
+  <?php echo CHtml::submitButton('Grid', array('name' => 'choose_view_block', 'id' => 'choose_view_block')); ?>
+  <?php echo CHtml::submitButton('List', array('name' => 'choose_view_list', 'id' => 'choose_view_list')); ?>
+  <?php echo CHtml::link('Очистить историю', array('#'), array('id' => 'clear_looking')); ?>
+<?php endif; ?>
 <div id="centerLayer">
   <?php foreach ($looking as $one): ?>
     <div class="product_block">
@@ -22,9 +18,7 @@ if ($looking) {
       <b><?php echo CHtml::link($one->name, array('view', 'id' => $one->id)); ?></b>
       <br/>
       <?php echo $one->price; ?><br/>
-
       <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
-
       <div id="description"><?php echo substr($one->description, 0, 300); ?></div>
     </div>
   <?php endforeach; ?>
@@ -37,14 +31,9 @@ if ($looking) {
       <b><?php echo CHtml::link($one->name, array('view', 'id' => $one->id)); ?></b><br/>
       <b><?php echo $one->price; ?></b><br/>
       <?php echo substr($one->description, 0, 250); ?><br/><br/>
-
       <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
-
     </div>
   <?php endforeach; ?>
 </div>
-
-<?php if (!$looking) {
-  echo 'Вы не просмотрели ни одного товара.';
-} ?>
+<?php if (!$looking) echo Yii::t('app', 'You have not viewed any product.'); ?>
     
