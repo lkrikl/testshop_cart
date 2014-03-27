@@ -20,6 +20,18 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
+		<?php echo $form->labelEx($model,'meta_keywords'); ?>
+		<?php echo $form->textArea($model,'meta_keywords',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_keywords'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'meta_descriptions'); ?>
+		<?php echo $form->textArea($model,'meta_descriptions',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_descriptions'); ?>
+	</div>
+
+	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
 		<?php echo $form->textField($model,'title',array('size'=>25,'maxlength'=>25)); ?>
 		<?php echo $form->error($model,'title'); ?>
@@ -32,7 +44,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Сохранить'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

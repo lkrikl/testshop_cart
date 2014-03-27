@@ -30,7 +30,7 @@ class Product extends CActiveRecord implements IECartPosition
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('name, price, manufacturer_id, image, category_id, description', 'required'),
+			array('name, price, manufacturer_id, image, category_id, description, meta_keywords, meta_descriptions', 'required'),
 			array('created, category_id', 'numerical', 'integerOnly'=>true),
 			array('price', 'numerical'),
 			array('name', 'length', 'max'=>25),
@@ -68,6 +68,8 @@ class Product extends CActiveRecord implements IECartPosition
 			'created' => 'Дата добавления',
 			'category_id' => 'Категория',
 			'description' => 'Описание',
+                        'meta_keywords' => 'Meta Keywords',
+                        'meta_descriptions' => 'Meta Descriptions',
 		);
 	}
 
@@ -90,13 +92,14 @@ class Product extends CActiveRecord implements IECartPosition
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
-                $criteria->compare('manufacturer_id',$this->manufacturer_id);
-		$criteria->compare('name',$this->name,true);
+            	$criteria->compare('name',$this->name,true);
 		$criteria->compare('price',$this->price);
 		$criteria->compare('image',$this->image,true);
 		$criteria->compare('created',$this->created);
 		$criteria->compare('category_id',$this->category_id);
 		$criteria->compare('description',$this->description,true);
+                $criteria->compare('meta_keywords',$this->meta_keywords,true);
+                $criteria->compare('meta_descriptions',$this->meta_descriptions,true);
                 
 
 		return new CActiveDataProvider($this, array(

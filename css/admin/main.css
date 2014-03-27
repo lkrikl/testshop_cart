@@ -462,3 +462,27 @@ div.search-form
 #cart .cart_right a:hover {
     color:#fff;
 }
+
+#tabs_seo li{
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #C9E0ED;
+    list-style-type: none; 
+}
+#tabs_seo li:hover{
+    cursor: pointer;
+    background: yellowgreen;
+}
+#admin_table_block{
+    width: 100%;
+    height: 250px;
+}
+#admin_table .table_header{
+    background: #C9E0ED;
+}
+#admin_table .table_header_right{
+    text-align: right;
+}
+#download_data_base{
+    display: none;
+}

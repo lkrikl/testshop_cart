@@ -24,9 +24,17 @@ $this->menu=array(
 		'id',
 		'name',
 		'price',
-		'image',
+		'image'=>array(
+                    'name' => 'image',
+                    'value' => '$data->image',
+                    'type' => 'html',
+                ),
 		'created',
 		'category_id',
 		'description',
 	),
 )); ?>
+
+<?php echo $model->image;?>
+<p><?php echo $model->name;?></p>
+<p><?php echo $model->price;?></p>

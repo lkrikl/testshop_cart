@@ -9,7 +9,7 @@ if ($looking) : ?>
   <?php echo Yii::t('app', 'Sort:'); ?>
   <?php echo CHtml::submitButton('Grid', array('name' => 'choose_view_block', 'id' => 'choose_view_block')); ?>
   <?php echo CHtml::submitButton('List', array('name' => 'choose_view_list', 'id' => 'choose_view_list')); ?>
-  <?php echo CHtml::link('Очистить историю', array('#'), array('id' => 'clear_looking')); ?>
+  <?php echo CHtml::link('Очистить историю', array('id' => 'clear_looking')); ?>
 <?php endif; ?>
 <div id="centerLayer">
   <?php foreach ($looking as $one): ?>

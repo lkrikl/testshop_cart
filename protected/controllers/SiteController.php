@@ -27,11 +27,9 @@ class SiteController extends Controller {
    * when an action is not explicitly requested by users.
    */
   public function actionIndex() {
-
     $product = Product::model()->findAll();
-
     krsort($product);
-
+    $seo = Site::model()->findByPk(1);
     session_start();
     if (!isset($_SESSION['looking'])) {
       $_SESSION['looking'] = array();
@@ -39,7 +37,10 @@ class SiteController extends Controller {
 
     // renders the view file 'protected/views/site/index.php'
     // using the default layout 'protected/views/layouts/main.php'
-    $this->render('index', array('product' => $product));
+    $this->render('index', array(
+        'product' => $product,
+        'seo'=>$seo,
+        ));
   }
 
   public function actionView($id) {
@@ -99,26 +100,7 @@ class SiteController extends Controller {
   /**
    * Displays the login page
    */
-  public function actionLogin() {
-    $model = new LoginForm;
-
-    // if it is ajax validation request
-    if (isset($_POST['ajax']) && $_POST['ajax'] === 'login-form') {
-      echo CActiveForm::validate($model);
-      Yii::app()->end();
-    }
-
-    // collect user input data
-    if (isset($_POST['LoginForm'])) {
-      $model->attributes = $_POST['LoginForm'];
-      // validate user input and redirect to the previous page if valid
-      if ($model->validate() && $model->login()) {
-        $this->redirect(Yii::app()->user->returnUrl);
-      }
-    }
-    // display the login form
-    $this->render('login', array('model' => $model));
-  }
+  
 
   /**
    * Logs out the current user and redirect to homepage.
@@ -127,4 +109,9 @@ class SiteController extends Controller {
     Yii::app()->user->logout();
     $this->redirect(Yii::app()->homeUrl);
   }
+  public function actionNews(){
+      $news = News::model()->findAll();
+      $this->render('news', array('news' => $news));
+  }
+  
 }

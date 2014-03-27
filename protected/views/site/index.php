@@ -2,6 +2,12 @@
 /* @var $this SiteController */
 
 $this->pageTitle = Yii::app()->name;
+$key = $seo->meta_keywords;
+$description = $seo->meta_descriptions;
+if(!empty($key))
+Yii::app()->params['keywords']= $seo->meta_keywords;
+if(!empty($description))
+Yii::app()->params['description']= $seo->meta_descriptions;
 ?>
 <?php 
       session_start();
@@ -21,6 +27,9 @@ $this->pageTitle = Yii::app()->name;
         <br />
         <?php echo $one->price; ?><br />
         <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
+        <?php if(!Yii::app()->user->isGuest) : ?>
+        <img class="user-like-product" src="/images/heart-reflection.png" data-id="<?php echo $one->id; ?>">
+        <?php endif; ?>
          <div id="description"><?php echo substr($one->description,0,300); ?>...</div>
     </div>
     
@@ -35,7 +44,10 @@ $this->pageTitle = Yii::app()->name;
            <b><?php echo $one->price; ?></b><br />
            <?php echo substr($one->description,0,250); ?><br /><br />
            <p class="add-product" data-id="<?php echo $one->id; ?>"></p>
-
+           <?php if(!Yii::app()->user->isGuest) : ?>
+           <img class="user-like-product" src="/images/heart-reflection.png" data-id="<?php echo $one->id; ?>">
+           <?php endif; ?>
+       
        </div>
     <?php endforeach; ?>
     <?php if (!$product)    echo 'В данной категории товаров нет.'; ?>

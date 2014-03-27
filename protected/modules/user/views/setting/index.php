@@ -1,7 +1,3 @@
-
-
-
-
 <h1>Настройки</h1>
 
 <?php if(Yii::app()->user->hasFlash('setting')): ?>

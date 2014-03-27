@@ -24,5 +24,7 @@ $this->menu=array(
 		'id',
 		'title',
 		'position',
+                'meta_keywords',
+		'meta_descriptions',
 	),
 )); ?>

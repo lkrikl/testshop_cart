@@ -46,12 +46,17 @@ $('.search-form form').submit(function(){
                     'name' => 'id',
                     'headerHtmlOptions' => array('width'=>20),
                 ),
-                'manufacturer_id'=> array(
-                    'name' => 'manufacturer_id',
-                    'value' => '$data->manufacturer->url',
-                    'filter' => Manufacturer::all(), 
-                    ),
+//                'manufacturer_id'=> array(
+//                    'name' => 'manufacturer_id',
+//                    'value' => '$data->manufacturer->url',
+//                    'filter' => Manufacturer::all(), 
+//                    ),
 		'name',
+                'image'=>array(
+                    'name' => 'image',
+                    'value' => '$data->image',
+                    'type' => 'html',
+                ),
 		'price' => array(
                     'name' => 'price',
                     'headerHtmlOptions' => array('width'=>70),
@@ -70,6 +75,8 @@ $('.search-form form').submit(function(){
                      ),
 		
 		'description',
+                'meta_keywords',
+		'meta_descriptions',
 		
 		array(
 			'class'=>'CButtonColumn',

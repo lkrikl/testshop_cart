@@ -52,6 +52,20 @@ class CartController extends Controller {
     header('Content-type: application/json');
     echo CJavaScript::jsonEncode($response);
     Yii::app()->end();
-
+  }
+  public function actionLike(){
+     
+      if (isset($_POST['product_id'])){
+          $like_product = new LikeProduct;
+          $like_product->user_id = Yii::app()->user->id;
+          $like_product->product_id = $_POST['product_id'];
+          $like_product->save(false);
+          Yii::app()->end();
+        }
+  }
+  public function actionLikeclear(){
+      if (isset($_POST['clear'])){
+          $clear = LikeProduct::model()->deleteAll('user_id = :user_id', array(':user_id'=>  Yii::app()->user->id));
+      }
   }
 }

@@ -11,7 +11,14 @@ $this->menu=array(
     array('label'=>UserModule::t('Change password'), 'url'=>array('changepassword')),
     array('label'=>UserModule::t('Logout'), 'url'=>array('/user/logout')),
 );
-?><h1><?php echo UserModule::t('Your profile'); ?></h1>
+?>
+   
+        <a href="/user/order">Список заказов</a>
+        <a href="/user/like">Список желаний</a><br><br>
+     
+
+
+<h1><?php echo UserModule::t('Your profile'); ?></h1>
 
 <?php if(Yii::app()->user->hasFlash('profileMessage')): ?>
 <div class="success">

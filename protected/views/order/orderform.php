@@ -44,6 +44,17 @@
   </div>
 
   <?php if (!Yii::app()->user->isGuest) : ?>
+    
+     <div class="row">
+        <?php echo $form->labelEx($model,'user_id'); ?>
+        <?php echo $form->hiddenField($model,'user_id',array(
+        'size' => 60,
+        'maxlength' => 100,
+        'value' => Yii::app()->user->id,
+      ));
+      ?>
+        <?php echo $form->error($model,'user_id'); ?>
+    </div>
 
     <div class="row">
       <?php echo $form->labelEx($model, 'user_name'); ?>

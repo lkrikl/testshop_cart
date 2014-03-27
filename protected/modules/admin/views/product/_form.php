@@ -55,11 +55,23 @@
 		<?php echo $form->dropDownList($model,'category_id', Category::all()); ?>
 		<?php echo $form->error($model,'category_id'); ?>
 	</div>
-
+        <br>
 	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
 		<?php echo $form->textArea($model,'description',array('rows'=>6, 'cols'=>50)); ?>
 		<?php echo $form->error($model,'description'); ?>
+	</div>
+        <br>
+        <div class="row">
+		<?php echo $form->labelEx($model,'meta_keywords'); ?>
+		<?php echo $form->textArea($model,'meta_keywords',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_keywords'); ?>
+	</div>
+<br>
+	<div class="row">
+		<?php echo $form->labelEx($model,'meta_descriptions'); ?>
+		<?php echo $form->textArea($model,'meta_descriptions',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_descriptions'); ?>
 	</div>
 
 	<div class="row buttons">

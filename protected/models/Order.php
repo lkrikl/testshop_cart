@@ -48,7 +48,7 @@ class Order extends CActiveRecord
                         array('user_email', 'email'),
                         array('user_phone','numerical','integerOnly'=>true),
                         array('user_phone','length','min'=>10),
-			array('user_id, delivery_id, status_id, paid, created, updated', 'numerical', 'integerOnly'=>true),
+			array('user_id, delivery_id, status_id, paid', 'numerical', 'integerOnly'=>true),
 			array('delivery_price, total_price', 'numerical'),
 			array('secret_key', 'length', 'max'=>10),
 			array('settlement_delivery, ip_address', 'length', 'max'=>50),
@@ -152,6 +152,9 @@ class Order extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
                         'pagination'=>false,
+                        'sort' => array(
+                            'defaultOrder' => 'id DESC',
+                        ),
 		));
 	}
 

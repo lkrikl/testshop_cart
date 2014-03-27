@@ -24,6 +24,18 @@
 		<?php echo $form->textField($model,'url',array('size'=>60,'maxlength'=>255)); ?>
 		<?php echo $form->error($model,'url'); ?>
 	</div>
+        
+        <div class="row">
+		<?php echo $form->labelEx($model,'meta_keywords'); ?>
+		<?php echo $form->textArea($model,'meta_keywords',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_keywords'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'meta_descriptions'); ?>
+		<?php echo $form->textArea($model,'meta_descriptions',array('rows'=>6, 'cols'=>50)); ?>
+		<?php echo $form->error($model,'meta_descriptions'); ?>
+	</div>
 
 	<div class="row buttons">
 		<?php echo CHtml::submitButton($model->isNewRecord ? 'Добавить' : 'Редактировать'); ?>

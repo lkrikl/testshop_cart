@@ -12,14 +12,16 @@
 	<![endif]-->
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/jquery-1.8.2.min.js"></script>
         <script src="<?php echo Yii::app()->baseUrl; ?>/js/script.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/js/raphael-min.js"></script>
+        <script src="<?php echo Yii::app()->baseUrl; ?>/js/morris.min.js"></script>
         <link rel="stylesheet" type="text/css" href="/protected/modules/admin/css/main.css">
-        
-	<?php //echo Yii::app()->bootstrap->register(); ?> 
-
-	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/main.css" />
+        <?php //echo Yii::app()->bootstrap->register(); ?> 
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/main.css" />
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/admin/morris.css" />
 	<link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->request->baseUrl; ?>/css/form.css" />
 
 	<title><?php echo CHtml::encode($this->pageTitle); ?></title>
+        <script type="text/javascript" src="https://www.google.com/jsapi"></script>
 </head>
 
 <body>
@@ -42,7 +44,13 @@
 				array('label'=>'Заказы', 'url'=>array('/admin/order', 'view'=>'about')),
                                 array('label'=>'Категории', 'url'=>array('/admin/category', 'view'=>'about')),
                                 array('label'=>'Товары', 'url'=>array('/admin/product', 'view'=>'about')),
+                                array('label'=>'Производители', 'url'=>array('/admin/manufacturer', 'view'=>'about')),
                                 array('label'=>'Комментарии', 'url'=>array('/admin/reviews', 'view'=>'about')),
+                                array('label'=>'Новости', 'url'=>array('/admin/news', 'view'=>'about')),
+                                array('label'=>'Страницы', 'url'=>array('/admin/page', 'view'=>'about')),
+                                array('label'=>'SEO', 'url'=>array('/admin/seo', 'view'=>'about')),
+                                array('label'=>'FAQ', 'url'=>array('/admin/faq', 'view'=>'about')),
+                                array('label'=>'Настройки', 'url'=>array('/admin/settings', 'view'=>'about')),
                                 array('label'=>'Вход', 'url'=>array('/site/login'), 'visible'=>Yii::app()->user->isGuest),
 				array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest)
 			),

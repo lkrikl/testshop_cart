@@ -157,12 +157,7 @@ $(document).ready(function () {
             $("#reviews").show();
             $("#add_reviews_about_product").show();
     });
-    
-    
-    
-    
-    
-    
+       
     $('#send_reviews_message').click(function () {
         var product_id = $('#reviews_product_id').val();
         var reviews_message = $('#reviews_user_message').val();
@@ -187,7 +182,6 @@ $(document).ready(function () {
                         $("#reviews").show();
                         $("#add_reviews_about_product").show();
                     }
-                
             }
         });
     });
@@ -195,9 +189,44 @@ $(document).ready(function () {
     
     
     
+    $('.user-like-product').click(function () {
+        var product_id = $(this).data("id");
+        $.ajax({
+            type: "POST",
+            url: "/cart/like",
+            dataType: "html",
+            data: {"product_id": product_id},
+            success: function (data) {
+                $("#message_cart").html("Добавлено в список желаемого товара!").show();
+                    setTimeout('$("#message_cart").hide();', 2600);
+            }
+        });
+    });
+    $('#clear_like_product').click(function () {
+        var clear = 1;
+        $.ajax({
+            type: "POST",
+            url: "/cart/likeclear",
+            dataType: "html",
+            data: {"clear": clear},
+            success: function (data) {
+                    location.reload();  
+            }
+        });
+    });
     
-    
-    
+    $('#view_link_download_data_base').click(function () {
+        var clear = 1;
+        $.ajax({
+            type: "POST",
+            url: "/admin/settings/backupdatabase",
+            dataType: "html",
+            data: {"clear": clear},
+            success: function (data) {
+                $("#download_data_base").show();
+            }
+        });
+    });
     
     
     

@@ -26,12 +26,12 @@ class Category extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, position', 'required'),
+			array('meta_keywords, meta_descriptions, title, position', 'required'),
 			array('position', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>25),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, title, position', 'safe', 'on'=>'search'),
+			array('id, meta_keywords, meta_descriptions, title, position', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -55,6 +55,8 @@ class Category extends CActiveRecord
 			'id' => 'ID',
 			'title' => 'Название',
 			'position' => 'Позиция',
+                        'meta_keywords' => 'Meta Keywords',
+                        'meta_descriptions' => 'Meta Descriptions',
 		);
 	}
 
@@ -77,6 +79,8 @@ class Category extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id);
+                $criteria->compare('meta_keywords',$this->meta_keywords,true);
+                $criteria->compare('meta_descriptions',$this->meta_descriptions,true);
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('position',$this->position);
 
@@ -110,20 +114,7 @@ class Category extends CActiveRecord
             foreach ($models as $one) {
                 $array[] = array('label'=>$one->title, 'url' => array('/product/index/id/'.$one->id));
             }
-            if ($position == 'top'){
-              $array[] = array('label'=>'Вход', 'url'=>array('/site/login#login_form'), 'visible'=>Yii::app()->user->isGuest);
-               $array[] = array('label'=>'Выход ('.Yii::app()->user->name.')', 'url'=>array('/site/logout'), 'visible'=>!Yii::app()->user->isGuest);
-                 $array[] = array('label'=>'Регистрация', 'url'=>array('/site/registration#login_form'), 'visible'=>Yii::app()->user->isGuest);
-                 $array[] = array('label'=>'', 'url'=>array('/admin/category'), 'visible'=>!Yii::app()->user->isGuest);
-                $array[] = array('label'=>'Галерея', 'url'=>array('/site/galery'), 'visible'=>!Yii::app()->user->isGuest);
-                     $array[] =        array('url'=>Yii::app()->getModule('user')->loginUrl, 'label'=>Yii::app()->getModule('user')->t("Login"), 'visible'=>Yii::app()->user->isGuest);
-                         $array[] =        array('url'=>Yii::app()->getModule('user')->registrationUrl, 'label'=>Yii::app()->getModule('user')->t("Register"), 'visible'=>Yii::app()->user->isGuest);
-                        $array[] =        array('url'=>Yii::app()->getModule('user')->profileUrl, 'label'=>Yii::app()->getModule('user')->t("Profile"), 'visible'=>!Yii::app()->user->isGuest);
-                         $array[] =       array('url'=>Yii::app()->getModule('user')->logoutUrl, 'label'=>Yii::app()->getModule('user')->t("Logout").' ('.Yii::app()->user->name.')', 'visible'=>!Yii::app()->user->isGuest);
-                   
-            }
-            
-            return $array;
+               return $array;
         }
         
         

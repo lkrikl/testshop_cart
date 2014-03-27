@@ -44,6 +44,8 @@ $('.search-form form').submit(function(){
                     'headerHtmlOptions' => array('width'=>50),
                 ),
 		'url',
+                'meta_keywords',
+		'meta_descriptions',
 //		'layout',
 //		'view',
 		array(

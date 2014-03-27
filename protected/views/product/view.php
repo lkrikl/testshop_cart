@@ -1,6 +1,13 @@
 <?php
-/* @var $this MonitorController */
 
+/* @var $this MonitorController */
+$this->pageTitle = Yii::app()->name;
+$key = $product->meta_keywords;
+$description = $product->meta_descriptions;
+if(!empty($key))
+Yii::app()->params['keywords']= $product->meta_keywords;
+if(!empty($description))
+Yii::app()->params['description']= $product->meta_descriptions;
 $this->breadcrumbs=array(
 	'Монитор: '.$product->name,
 );

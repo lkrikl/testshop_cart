@@ -27,6 +27,7 @@ class Manufacturer extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
+                        array('meta_keywords, meta_descriptions', 'required'),
 			array('url, layout, view', 'length', 'max'=>255),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
@@ -106,7 +107,9 @@ class Manufacturer extends CActiveRecord
             $models = self::model()->findAllByAttributes(array('view' => $view));
             $array = array();
             foreach ($models as $one) {
-                $array[] = array('label'=>$one->url, 'url' => array('/product/index/id/'.$one->id));
+                
+                $array[] = array('label'=>$one->url, 'url' => array('/product/manufacturer/'.$one->id));
+            
             }
             return $array;
             

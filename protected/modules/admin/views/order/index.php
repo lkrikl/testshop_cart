@@ -72,18 +72,8 @@ $('.search-form form').submit(function(){
 		'user_phone',
 		'user_comment',
 	//	'ip_address',
-		'created' => array(
-                    'name' => 'created',
-                    'value' => 'date("j.m.Y H:i", $data->created)',
-                    'filter' => false,           
-                    'headerHtmlOptions' => array('width'=>70),
-                ),
-		'updated' => array(
-                    'name' => 'updated',
-                    'value' => 'date("j.m.Y H:i", $data->created)',
-                    'filter' => false,           
-                    'headerHtmlOptions' => array('width'=>70),
-                ),
+		'created',
+		'updated',
 	//	'discount',
 		'admin_comment',
 		
